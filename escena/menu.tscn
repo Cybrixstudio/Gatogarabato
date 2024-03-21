@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxr84tvcd05sl"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_qlqws"]
+[ext_resource type="Texture2D" uid="uid://bvq6yaevkfyl3" path="res://assets/Menu/jugar.png" id="1_sjmou"]
+[ext_resource type="Texture2D" uid="uid://c122wi65sh2jj" path="res://assets/Menu/BG.jpg" id="2_52a6d"]
+[ext_resource type="SpriteFrames" uid="uid://cjtdy73mbkt1y" path="res://escena/GATO1.tres" id="3_y1t6c"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6vddf"]
+diffuse_texture = ExtResource("2_52a6d")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_qlqws")
+
+[node name="VBoxBotones" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 169.0
+offset_top = 190.0
+offset_right = 916.0
+offset_bottom = 514.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.255565, 0.255565)
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxBotones"]
+position = Vector2(-665.674, -742.809)
+scale = Vector2(2.35232, 2.3393)
+texture = SubResource("CanvasTexture_6vddf")
+
+[node name="gato2" type="AnimatedSprite2D" parent="VBoxBotones"]
+position = Vector2(-2347.74, -1056.48)
+rotation = 0.376531
+scale = Vector2(1.73812, 1.73812)
+sprite_frames = ExtResource("3_y1t6c")
+animation = &"gato2"
+autoplay = "gato2"
+frame_progress = 0.103529
+
+[node name="gato1" type="AnimatedSprite2D" parent="VBoxBotones"]
+position = Vector2(-2202.96, 172.167)
+scale = Vector2(2.15572, 2.15572)
+sprite_frames = ExtResource("3_y1t6c")
+animation = &"gato1"
+autoplay = "gato1"
+frame_progress = 0.808479
+
+[node name="gato3" type="AnimatedSprite2D" parent="VBoxBotones"]
+position = Vector2(1107.35, -1780.37)
+rotation = -2.39034
+scale = Vector2(2.1028, 2.1028)
+sprite_frames = ExtResource("3_y1t6c")
+animation = &"gato3"
+autoplay = "gato3"
+frame_progress = 0.456767
+
+[node name="jugar" type="TextureButton" parent="VBoxBotones"]
+layout_mode = 2
+texture_normal = ExtResource("1_sjmou")
+
+[connection signal="animation_looped" from="VBoxBotones/gato2" to="." method="_on_gato_2_animation_looped"]
+[connection signal="animation_looped" from="VBoxBotones/gato1" to="." method="_on_gato_1_animation_looped"]
+[connection signal="animation_looped" from="VBoxBotones/gato3" to="." method="_on_gato_3_animation_looped"]
+[connection signal="mouse_entered" from="VBoxBotones/jugar" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="VBoxBotones/jugar" to="." method="change_cursor_back"]
+[connection signal="pressed" from="VBoxBotones/jugar" to="." method="_on_jugar_pressed"]

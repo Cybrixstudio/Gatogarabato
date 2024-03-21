@@ -1,0 +1,211 @@
+[gd_scene load_steps=19 format=3 uid="uid://cnqhvh6fulgs5"]
+
+[ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
+[ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
+[ext_resource type="SpriteFrames" uid="uid://cjtdy73mbkt1y" path="res://escena/GATO1.tres" id="2_uq68j"]
+[ext_resource type="Texture2D" uid="uid://d08n6250nqbjn" path="res://assets/ALCOBA/ALCOBA_0001s_0002s_0002_BAUL.png" id="4_aytdt"]
+[ext_resource type="Texture2D" uid="uid://cdfrkeni3t6q3" path="res://assets/ALCOBA/ALCOBA_0001s_0002s_0000_TAPA-BAUL-1.png" id="5_2tiya"]
+[ext_resource type="Texture2D" uid="uid://dfxcmi8lf0xeg" path="res://assets/ALCOBA/ALCOBA_0001s_0002s_0003_TAPA-BAUL-2.png" id="5_iawud"]
+[ext_resource type="Texture2D" uid="uid://ql6jtl1wj6my" path="res://assets/ALCOBA/tapafrentebaul.png" id="7_0kqcq"]
+[ext_resource type="Texture2D" uid="uid://orkx4diopbcv" path="res://assets/ALCOBA/ALCOBA_0001s_0003s_0001_CORTINA-1.png" id="8_td0li"]
+[ext_resource type="Texture2D" uid="uid://cqwqkgn4pj7tg" path="res://assets/ALCOBA/CAMA.png" id="9_dtab0"]
+[ext_resource type="Texture2D" uid="uid://c22iukruu2r70" path="res://assets/ALCOBA/ALCOBA_0001s_0005s_0001_PUERTA.png" id="10_ggn1a"]
+[ext_resource type="Texture2D" uid="uid://pnrky8beat6f" path="res://assets/ALCOBA/ALCOBA_0000s_0003_Capa-1.png" id="11_0mm2m"]
+[ext_resource type="Texture2D" uid="uid://dmq4pc7kiw82f" path="res://assets/ALCOBA/catchgato1.png" id="12_e8m5s"]
+[ext_resource type="Texture2D" uid="uid://dfuksnaorepby" path="res://assets/Menu/JUEGO GATOS.png" id="13_oh6e7"]
+[ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="14_sa8nr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
+size = Vector2(141.304, 430.366)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdlt4"]
+size = Vector2(371.667, 108.333)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3ls6"]
+size = Vector2(219.005, 617.54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3fn35"]
+size = Vector2(6256.64, 3592.93)
+
+[node name="LVl2Alcoba" type="Node2D"]
+script = ExtResource("1_1nbii")
+metadata/_edit_horizontal_guides_ = [325.0, 163.0, 495.0]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.540922, 0.598148)
+texture = ExtResource("1_8u04r")
+
+[node name="GATO3" type="AnimatedSprite2D" parent="."]
+position = Vector2(584.577, 205.26)
+scale = Vector2(0.106058, 0.117279)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato3"
+autoplay = "gato3"
+
+[node name="lestcatchgato3" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(677, 193)
+scale = Vector2(0.127117, 0.140565)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato3"
+autoplay = "gato3"
+
+[node name="cortina" type="Sprite2D" parent="."]
+position = Vector2(583.6, 154.15)
+scale = Vector2(0.530769, 0.583224)
+texture = ExtResource("8_td0li")
+
+[node name="Area2D" type="Area2D" parent="cortina"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cortina/Area2D"]
+position = Vector2(-5.8407, -9.68745)
+shape = SubResource("RectangleShape2D_smj7c")
+
+[node name="baul" type="Sprite2D" parent="."]
+position = Vector2(441, 418)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_aytdt")
+
+[node name="tapaabiertabaul" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(452, 305)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_iawud")
+
+[node name="GATO1" type="AnimatedSprite2D" parent="."]
+position = Vector2(406, 395)
+scale = Vector2(0.127117, 0.140565)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato1"
+autoplay = "gato1"
+
+[node name="tapacerradabaul" type="Sprite2D" parent="."]
+position = Vector2(441, 346)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_2tiya")
+
+[node name="tcbaulArea2D" type="Area2D" parent="tapacerradabaul"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tapacerradabaul/tcbaulArea2D"]
+position = Vector2(-0.833435, 2.50006)
+shape = SubResource("RectangleShape2D_vdlt4")
+
+[node name="frentebaul" type="Sprite2D" parent="."]
+position = Vector2(428, 426)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_0kqcq")
+
+[node name="lestcathgato1" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(340, 415)
+scale = Vector2(0.127117, 0.140565)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato1"
+autoplay = "gato1"
+
+[node name="Cama" type="Sprite2D" parent="."]
+position = Vector2(711.55, 428)
+scale = Vector2(0.544379, 0.612245)
+texture = ExtResource("9_dtab0")
+
+[node name="GATO2" type="AnimatedSprite2D" parent="."]
+position = Vector2(213, 335)
+scale = Vector2(0.127117, 0.140565)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato2"
+autoplay = "gato2"
+frame_progress = 0.95881
+
+[node name="lestcatchgato2" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(194, 382)
+scale = Vector2(0.127117, 0.140565)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato2"
+autoplay = "gato2"
+frame_progress = 0.95881
+
+[node name="Puerta" type="Sprite2D" parent="."]
+position = Vector2(209.7, 230.65)
+scale = Vector2(0.534234, 0.589436)
+texture = ExtResource("10_ggn1a")
+
+[node name="PuertaArea2D" type="Area2D" parent="Puerta"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta/PuertaArea2D"]
+position = Vector2(1.49747, -1.10272)
+shape = SubResource("RectangleShape2D_l3ls6")
+
+[node name="Alcoba0000s0003Capa-1" type="Sprite2D" parent="."]
+position = Vector2(1093.5, 323)
+scale = Vector2(0.495763, 0.6)
+texture = ExtResource("11_0mm2m")
+
+[node name="Catchgato1" type="Sprite2D" parent="."]
+position = Vector2(1094, 109)
+scale = Vector2(3.4, 3.4)
+texture = ExtResource("12_e8m5s")
+
+[node name="Catchgato2" type="Sprite2D" parent="."]
+position = Vector2(1095, 441)
+scale = Vector2(3.4, 3.4)
+texture = ExtResource("12_e8m5s")
+
+[node name="Catchgato3" type="Sprite2D" parent="."]
+position = Vector2(1096, 271)
+scale = Vector2(3.4, 3.4)
+texture = ExtResource("12_e8m5s")
+
+[node name="imgcatchGATO1" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(1099.32, 275.487)
+scale = Vector2(0.0746696, 0.0825691)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato1"
+autoplay = "gato1"
+
+[node name="imgcatchGATO2" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(1094.88, 441.921)
+scale = Vector2(0.0755776, 0.0835731)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato2"
+autoplay = "gato2"
+frame_progress = 0.95881
+
+[node name="imgcatchGATO3" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(1095.86, 109.337)
+scale = Vector2(0.0761541, 0.0842106)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato3"
+autoplay = "gato3"
+frame_progress = 0.587916
+
+[node name="JuegoGatos" type="Sprite2D" parent="."]
+position = Vector2(1092.66, 582.25)
+scale = Vector2(0.016, 0.018)
+texture = ExtResource("13_oh6e7")
+
+[node name="homeArea2D" type="Area2D" parent="JuegoGatos"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JuegoGatos/homeArea2D"]
+position = Vector2(24.125, 15.4844)
+shape = SubResource("RectangleShape2D_3fn35")
+
+[node name="miaw" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_sa8nr")
+
+[connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="cortina/Area2D" to="." method="change_cursor_back"]
+[connection signal="input_event" from="tapacerradabaul/tcbaulArea2D" to="." method="_on_tcbaul_area_2d_input_event"]
+[connection signal="mouse_entered" from="tapacerradabaul/tcbaulArea2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="tapacerradabaul/tcbaulArea2D" to="." method="change_cursor_back"]
+[connection signal="input_event" from="Puerta/PuertaArea2D" to="." method="_on_puerta_area_2d_input_event"]
+[connection signal="mouse_entered" from="Puerta/PuertaArea2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="Puerta/PuertaArea2D" to="." method="change_cursor_back"]
+[connection signal="input_event" from="JuegoGatos/homeArea2D" to="." method="_on_home_area_2d_input_event"]
+[connection signal="mouse_entered" from="JuegoGatos/homeArea2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="JuegoGatos/homeArea2D" to="." method="change_cursor_back"]
