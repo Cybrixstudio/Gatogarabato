@@ -44,7 +44,7 @@ position = Vector2(-2347.74, -1056.48)
 rotation = 0.376531
 scale = Vector2(1.73812, 1.73812)
 sprite_frames = ExtResource("3_y1t6c")
-animation = &"gato ventana salida"
+animation = &"gato2"
 autoplay = "gato2"
 
 [node name="gato1" type="AnimatedSprite2D" parent="VBoxBotones"]
@@ -53,7 +53,6 @@ scale = Vector2(2.15572, 2.15572)
 sprite_frames = ExtResource("3_y1t6c")
 animation = &"gato1"
 autoplay = "gato1"
-frame_progress = 0.808479
 
 [node name="gato3" type="AnimatedSprite2D" parent="VBoxBotones"]
 position = Vector2(1107.35, -1780.37)
@@ -71,6 +70,4 @@ texture_normal = ExtResource("1_sjmou")
 [connection signal="animation_looped" from="VBoxBotones/gato2" to="." method="_on_gato_2_animation_looped"]
 [connection signal="animation_looped" from="VBoxBotones/gato1" to="." method="_on_gato_1_animation_looped"]
 [connection signal="animation_looped" from="VBoxBotones/gato3" to="." method="_on_gato_3_animation_looped"]
-[connection signal="mouse_entered" from="VBoxBotones/jugar" to="." method="change_cursor_hand"]
-[connection signal="mouse_exited" from="VBoxBotones/jugar" to="." method="change_cursor_back"]
 [connection signal="pressed" from="VBoxBotones/jugar" to="." method="_on_jugar_pressed"]

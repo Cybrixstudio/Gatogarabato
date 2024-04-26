@@ -32,6 +32,11 @@ func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 		miaw.play()
 		$lestcatchgato2.play()
 		
+func _on_zapato_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		miaw.play()
+		$"gato zapato salida".play()
+		
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		get_tree().change_scene_to_file("res://LvL1.tscn")
@@ -48,3 +53,8 @@ func _on_lestcatchgato_2_animation_finished():
 func _on_lestcatchgato_3_animation_finished():
 		$gato3ventanaidol.visible = true
 		$lestcatchgato3.visible = false
+		
+func _on_gato_zapato_salida_animation_finished():
+		$"gato zapato salida".visible = false
+		$gatozapatoidol.visible = true
+		

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cnqhvh6fulgs5"]
+[gd_scene load_steps=20 format=3 uid="uid://cnqhvh6fulgs5"]
 
 [ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
 [ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
@@ -16,16 +16,19 @@
 [ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="14_sa8nr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
-size = Vector2(141.304, 430.366)
+size = Vector2(194.058, 430.366)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vdlt4"]
-size = Vector2(371.667, 108.333)
+size = Vector2(371.667, 208.333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3ls6"]
-size = Vector2(219.005, 617.54)
+size = Vector2(273.288, 617.54)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3fn35"]
 size = Vector2(6256.64, 3592.93)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yx86q"]
+size = Vector2(119.5, 60)
 
 [node name="LVl2Alcoba" type="Node2D"]
 script = ExtResource("1_1nbii")
@@ -51,7 +54,7 @@ texture = ExtResource("8_td0li")
 [node name="Area2D" type="Area2D" parent="cortina"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="cortina/Area2D"]
-position = Vector2(-5.8407, -9.68745)
+position = Vector2(20.5363, -9.68747)
 shape = SubResource("RectangleShape2D_smj7c")
 
 [node name="baul" type="Sprite2D" parent="."]
@@ -73,10 +76,11 @@ texture = ExtResource("5_2tiya")
 [node name="tcbaulArea2D" type="Area2D" parent="tapacerradabaul"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tapacerradabaul/tcbaulArea2D"]
-position = Vector2(-0.833435, 2.50006)
+position = Vector2(-0.833435, 52.5001)
 shape = SubResource("RectangleShape2D_vdlt4")
 
 [node name="frentebaul" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(428, 426)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("7_0kqcq")
@@ -108,7 +112,7 @@ texture = ExtResource("10_ggn1a")
 [node name="PuertaArea2D" type="Area2D" parent="Puerta"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Puerta/PuertaArea2D"]
-position = Vector2(1.49747, -1.10272)
+position = Vector2(28.6392, -1.10269)
 shape = SubResource("RectangleShape2D_l3ls6")
 
 [node name="Alcoba0000s0003Capa-1" type="Sprite2D" parent="."]
@@ -168,6 +172,26 @@ sprite_frames = ExtResource("2_uq68j")
 animation = &"gato3 ventana idol"
 autoplay = "gato3 ventana idol"
 
+[node name="zapato" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zapato"]
+position = Vector2(223.25, 567)
+shape = SubResource("RectangleShape2D_yx86q")
+
+[node name="gatozapatoidol" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(269, 523)
+scale = Vector2(0.152, 0.152)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gatozapatoidol"
+autoplay = "gatozapatoidol"
+
+[node name="gato zapato salida" type="AnimatedSprite2D" parent="."]
+position = Vector2(269, 523)
+scale = Vector2(0.152, 0.152)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato zapato salida"
+
 [connection signal="animation_finished" from="lestcatchgato3" to="." method="_on_lestcatchgato_3_animation_finished"]
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]
@@ -183,3 +207,5 @@ autoplay = "gato3 ventana idol"
 [connection signal="input_event" from="JuegoGatos/homeArea2D" to="." method="_on_home_area_2d_input_event"]
 [connection signal="mouse_entered" from="JuegoGatos/homeArea2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="JuegoGatos/homeArea2D" to="." method="change_cursor_back"]
+[connection signal="input_event" from="zapato" to="." method="_on_zapato_input_event"]
+[connection signal="animation_finished" from="gato zapato salida" to="." method="_on_gato_zapato_salida_animation_finished"]
