@@ -20,7 +20,6 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$cortina.visible = false
 		$imgcatchGATO3.visible = true
-		$GATO3.visible = false
 		$lestcatchgato3.visible = true
 		$cortina/Area2D.visible = false
 		miaw.play()
@@ -30,7 +29,6 @@ func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 		$tapacerradabaul.visible = false
 		$tapaabiertabaul.visible = true
 		$lestcathgato1.visible = true
-		$GATO1.visible = false
 		$imgcatchGATO1.visible = true
 		$tapacerradabaul/tcbaulArea2D.visible = false
 		miaw.play()

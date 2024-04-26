@@ -36,20 +36,13 @@ position = Vector2(576, 322)
 scale = Vector2(0.540922, 0.598148)
 texture = ExtResource("1_8u04r")
 
-[node name="GATO3" type="AnimatedSprite2D" parent="."]
-position = Vector2(584.577, 205.26)
-scale = Vector2(0.106058, 0.117279)
-sprite_frames = ExtResource("2_uq68j")
-animation = &"gato3"
-autoplay = "gato3"
-
 [node name="lestcatchgato3" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(677, 193)
+position = Vector2(654, 219)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato3"
-autoplay = "gato3"
+animation = &"gato ventana salida"
+autoplay = "gato ventana salida"
 
 [node name="cortina" type="Sprite2D" parent="."]
 position = Vector2(583.6, 154.15)
@@ -73,13 +66,6 @@ position = Vector2(452, 305)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("5_iawud")
 
-[node name="GATO1" type="AnimatedSprite2D" parent="."]
-position = Vector2(406, 395)
-scale = Vector2(0.127117, 0.140565)
-sprite_frames = ExtResource("2_uq68j")
-animation = &"gato1"
-autoplay = "gato1"
-
 [node name="tapacerradabaul" type="Sprite2D" parent="."]
 position = Vector2(441, 346)
 scale = Vector2(0.6, 0.6)
@@ -98,11 +84,13 @@ texture = ExtResource("7_0kqcq")
 
 [node name="lestcathgato1" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(340, 415)
+position = Vector2(402, 367)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato1"
-autoplay = "gato1"
+animation = &"gato baul salida"
+autoplay = "gato baul salida"
+frame = 24
+frame_progress = 1.0
 
 [node name="Cama" type="Sprite2D" parent="."]
 position = Vector2(711.55, 428)
@@ -113,18 +101,15 @@ texture = ExtResource("9_dtab0")
 position = Vector2(213, 335)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato2"
-autoplay = "gato2"
-frame_progress = 0.95881
+animation = &"gato baul salida"
 
 [node name="lestcatchgato2" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(194, 382)
+position = Vector2(280, 359)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato2"
-autoplay = "gato2"
-frame_progress = 0.95881
+animation = &"gato baul idol"
+autoplay = "gato puerta salida"
 
 [node name="Puerta" type="Sprite2D" parent="."]
 position = Vector2(209.7, 230.65)
@@ -162,26 +147,21 @@ visible = false
 position = Vector2(1099.32, 275.487)
 scale = Vector2(0.0746696, 0.0825691)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato1"
-autoplay = "gato1"
+animation = &"gato baul salida"
 
 [node name="imgcatchGATO2" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(1094.88, 441.921)
 scale = Vector2(0.0755776, 0.0835731)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato2"
-autoplay = "gato2"
-frame_progress = 0.95881
+animation = &"gato baul salida"
 
 [node name="imgcatchGATO3" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(1095.86, 109.337)
 scale = Vector2(0.0761541, 0.0842106)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato3"
-autoplay = "gato3"
-frame_progress = 0.587916
+animation = &"gato baul salida"
 
 [node name="JuegoGatos" type="Sprite2D" parent="."]
 position = Vector2(1092.66, 582.25)
