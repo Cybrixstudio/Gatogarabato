@@ -44,3 +44,7 @@ func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		get_tree().change_scene_to_file("res://LvL1.tscn")
+		
+func _on_lestcathgato_1_animation_finished():
+		$baul_idol.visible = true
+		$lestcathgato1.visible = false
