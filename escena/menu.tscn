@@ -44,9 +44,8 @@ position = Vector2(-2347.74, -1056.48)
 rotation = 0.376531
 scale = Vector2(1.73812, 1.73812)
 sprite_frames = ExtResource("3_y1t6c")
-animation = &"gato2"
+animation = &"gato ventana salida"
 autoplay = "gato2"
-frame_progress = 0.103529
 
 [node name="gato1" type="AnimatedSprite2D" parent="VBoxBotones"]
 position = Vector2(-2202.96, 172.167)

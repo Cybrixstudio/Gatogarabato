@@ -988,7 +988,7 @@ visible = false
 position = Vector2(1099, 178.78)
 scale = Vector2(0.08, 0.0825208)
 sprite_frames = ExtResource("190_yc0xn")
-animation = &"gato1"
+animation = &"gato baul idol"
 autoplay = "gato1"
 
 [node name="JuegoGatos" type="Sprite2D" parent="."]
