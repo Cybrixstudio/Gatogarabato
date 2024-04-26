@@ -41,7 +41,7 @@ visible = false
 position = Vector2(654, 219)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato ventana salida"
+animation = &"gato baul idol"
 autoplay = "gato ventana salida"
 
 [node name="cortina" type="Sprite2D" parent="."]
@@ -89,8 +89,6 @@ scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato baul salida"
 autoplay = "gato baul salida"
-frame = 24
-frame_progress = 1.0
 
 [node name="Cama" type="Sprite2D" parent="."]
 position = Vector2(711.55, 428)
@@ -142,27 +140,6 @@ position = Vector2(1096, 271)
 scale = Vector2(3.4, 3.4)
 texture = ExtResource("12_e8m5s")
 
-[node name="imgcatchGATO1" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1099.32, 275.487)
-scale = Vector2(0.0746696, 0.0825691)
-sprite_frames = ExtResource("2_uq68j")
-animation = &"gato baul salida"
-
-[node name="imgcatchGATO2" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1094.88, 441.921)
-scale = Vector2(0.0755776, 0.0835731)
-sprite_frames = ExtResource("2_uq68j")
-animation = &"gato baul salida"
-
-[node name="imgcatchGATO3" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1095.86, 109.337)
-scale = Vector2(0.0761541, 0.0842106)
-sprite_frames = ExtResource("2_uq68j")
-animation = &"gato baul salida"
-
 [node name="JuegoGatos" type="Sprite2D" parent="."]
 position = Vector2(1092.66, 582.25)
 scale = Vector2(0.016, 0.018)
@@ -176,6 +153,11 @@ shape = SubResource("RectangleShape2D_3fn35")
 
 [node name="miaw" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_sa8nr")
+
+[node name="baul_idol" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato baul idol"
 
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]

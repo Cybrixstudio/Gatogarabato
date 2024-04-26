@@ -19,27 +19,27 @@ func change_cursor_back():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$cortina.visible = false
-		$imgcatchGATO3.visible = true
 		$lestcatchgato3.visible = true
 		$cortina/Area2D.visible = false
 		miaw.play()
+		$lestcatchgato3.play()
 		
 func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$tapacerradabaul.visible = false
 		$tapaabiertabaul.visible = true
 		$lestcathgato1.visible = true
-		$imgcatchGATO1.visible = true
 		$tapacerradabaul/tcbaulArea2D.visible = false
 		miaw.play()
+		$lestcathgato1.play()
 		
 func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$Puerta.visible = false
 		$lestcatchgato2.visible = true
-		$imgcatchGATO2.visible = true
 		$GATO2.visible = false
 		miaw.play()
+		$lestcatchgato2.play()
 		
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
