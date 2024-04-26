@@ -15,7 +15,7 @@ func change_cursor_hand():
 	
 func change_cursor_back():
 	Input.set_custom_mouse_cursor(null)
-
+	
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$cortina.visible = false
@@ -37,7 +37,6 @@ func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$Puerta.visible = false
 		$lestcatchgato2.visible = true
-		$GATO2.visible = false
 		miaw.play()
 		$lestcatchgato2.play()
 		
@@ -46,5 +45,14 @@ func _on_home_area_2d_input_event(viewport, event, shape_idx):
 		get_tree().change_scene_to_file("res://LvL1.tscn")
 		
 func _on_lestcathgato_1_animation_finished():
+		$baul_idol.play()
 		$baul_idol.visible = true
 		$lestcathgato1.visible = false
+		
+func _on_lestcatchgato_2_animation_finished(): 
+		$gato2puertaidol.visible = true
+		$lestcatchgato2.visible = false
+		
+func _on_lestcatchgato_3_animation_finished():
+		$gato3ventanaidol.visible = true
+		$lestcatchgato3.visible = false

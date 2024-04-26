@@ -42,7 +42,6 @@ position = Vector2(654, 219)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato ventana salida"
-autoplay = "gato ventana salida"
 
 [node name="cortina" type="Sprite2D" parent="."]
 position = Vector2(583.6, 154.15)
@@ -88,18 +87,11 @@ position = Vector2(402, 367)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato baul salida"
-frame = 24
 
 [node name="Cama" type="Sprite2D" parent="."]
 position = Vector2(711.55, 428)
 scale = Vector2(0.544379, 0.612245)
 texture = ExtResource("9_dtab0")
-
-[node name="GATO2" type="AnimatedSprite2D" parent="."]
-position = Vector2(213, 335)
-scale = Vector2(0.127117, 0.140565)
-sprite_frames = ExtResource("2_uq68j")
-animation = &"gato baul salida"
 
 [node name="lestcatchgato2" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -107,7 +99,6 @@ position = Vector2(280, 359)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato puerta salida"
-autoplay = "gato puerta salida"
 
 [node name="Puerta" type="Sprite2D" parent="."]
 position = Vector2(209.7, 230.65)
@@ -154,14 +145,30 @@ shape = SubResource("RectangleShape2D_3fn35")
 [node name="miaw" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_sa8nr")
 
+[node name="gato2puertaidol" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(281, 359)
+scale = Vector2(0.127117, 0.140565)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato2 puerta idol"
+autoplay = "gato2 puerta idol"
+
 [node name="baul_idol" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(398.667, 368)
 scale = Vector2(0.137037, 0.137037)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato baul idol"
-autoplay = "gato baul idol"
 
+[node name="gato3ventanaidol" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(653, 219)
+scale = Vector2(0.127, 0.141)
+sprite_frames = ExtResource("2_uq68j")
+animation = &"gato3 ventana idol"
+autoplay = "gato3 ventana idol"
+
+[connection signal="animation_finished" from="lestcatchgato3" to="." method="_on_lestcatchgato_3_animation_finished"]
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="cortina/Area2D" to="." method="change_cursor_back"]
@@ -169,10 +176,10 @@ autoplay = "gato baul idol"
 [connection signal="mouse_entered" from="tapacerradabaul/tcbaulArea2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="tapacerradabaul/tcbaulArea2D" to="." method="change_cursor_back"]
 [connection signal="animation_finished" from="lestcathgato1" to="." method="_on_lestcathgato_1_animation_finished"]
+[connection signal="animation_finished" from="lestcatchgato2" to="." method="_on_lestcatchgato_2_animation_finished"]
 [connection signal="input_event" from="Puerta/PuertaArea2D" to="." method="_on_puerta_area_2d_input_event"]
 [connection signal="mouse_entered" from="Puerta/PuertaArea2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="Puerta/PuertaArea2D" to="." method="change_cursor_back"]
 [connection signal="input_event" from="JuegoGatos/homeArea2D" to="." method="_on_home_area_2d_input_event"]
 [connection signal="mouse_entered" from="JuegoGatos/homeArea2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="JuegoGatos/homeArea2D" to="." method="change_cursor_back"]
-[connection signal="animation_finished" from="baul_idol" to="." method="_on_baul_idol_animation_finished"]
