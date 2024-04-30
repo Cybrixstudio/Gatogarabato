@@ -58,3 +58,12 @@ func _on_gato_zapato_salida_animation_finished():
 		$"gato zapato salida".visible = false
 		$gatozapatoidol.visible = true
 		
+func _on_cama_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		miaw.play()
+		$gatocamasalida.play()
+		
+		
+
+func _on_gatocamasalida_animation_finished():
+	pass # Replace with function body.
