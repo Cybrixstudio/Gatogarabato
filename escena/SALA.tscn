@@ -4674,7 +4674,6 @@ texture = ExtResource("188_5p84s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Libros/librosArea2D"]
 position = Vector2(26.6667, -4.76193)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_fydjs")
 
 [node name="gatolibros" type="AnimatedSprite2D" parent="."]
@@ -4700,7 +4699,6 @@ texture = ExtResource("187_4d4en")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Equipo/equipoArea2D"]
 position = Vector2(-20.8958, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_exiri")
 
 [node name="gatoequipo" type="AnimatedSprite2D" parent="."]
