@@ -63,7 +63,6 @@ scale = Vector2(2.1028, 2.1028)
 sprite_frames = ExtResource("3_y1t6c")
 animation = &"gato3"
 autoplay = "gato3"
-frame_progress = 0.456767
 
 [node name="jugar" type="TextureButton" parent="VBoxBotones"]
 layout_mode = 2

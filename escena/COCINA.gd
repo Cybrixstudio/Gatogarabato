@@ -16,18 +16,19 @@ func _on_home_area_2d_input_event(viewport, event, shape_idx):
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$gatoventana.visible = true
 		$ventana.visible = false
 		$imggatoventana.visible = true
 		miaw.play()
-
+		$gatoventana.play()
+		
 func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$Alacenaopen.visible = true
 		$Alacenaclose.visible = false
 		$imggatoalacena.visible = true
 		miaw.play()
-
+		$gatoalacena.play()
+		
 func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$letscatchgatocajon.visible = true
@@ -52,3 +53,10 @@ func _on_jarron_area_2d_input_event(viewport, event, shape_idx):
 		$Jarron/jarronArea2D.visible = false
 		miaw.play()
 		
+func _on_gatoventana_animation_finished():
+		$gatoventanaidol.visible = true
+		$gatoventana.visible = false
+		
+func _on_gatoalacena_animation_finished():
+		$gatoalacena.visible = false
+		$gatoalacenaidol.visible = true
