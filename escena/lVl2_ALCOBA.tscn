@@ -40,16 +40,16 @@ texture = ExtResource("1_8u04r")
 position = Vector2(584.577, 205.26)
 scale = Vector2(0.106058, 0.117279)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato3"
-autoplay = "gato3"
+animation = &"gato 14 cortina idol"
+autoplay = "gato 14 cortina idol"
 
 [node name="lestcatchgato3" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(677, 193)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato3"
-autoplay = "gato3"
+animation = &"gato 14 cortina idol"
+autoplay = "gato 14 cortina idol"
 
 [node name="cortina" type="Sprite2D" parent="."]
 position = Vector2(583.6, 154.15)
@@ -122,9 +122,8 @@ visible = false
 position = Vector2(194, 382)
 scale = Vector2(0.127117, 0.140565)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato2"
+animation = &"gato 14 cortina salida"
 autoplay = "gato2"
-frame_progress = 0.95881
 
 [node name="Puerta" type="Sprite2D" parent="."]
 position = Vector2(209.7, 230.65)
@@ -179,9 +178,8 @@ visible = false
 position = Vector2(1095.86, 109.337)
 scale = Vector2(0.0761541, 0.0842106)
 sprite_frames = ExtResource("2_uq68j")
-animation = &"gato3"
-autoplay = "gato3"
-frame_progress = 0.587916
+animation = &"gato 14 cortina idol"
+autoplay = "gato 14 cortina idol"
 
 [node name="JuegoGatos" type="Sprite2D" parent="."]
 position = Vector2(1092.66, 582.25)
