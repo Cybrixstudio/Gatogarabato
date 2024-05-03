@@ -1,575 +1,1681 @@
-[gd_scene load_steps=202 format=3 uid="uid://cut6dpoe1g2xy"]
+[gd_scene load_steps=476 format=3 uid="uid://cut6dpoe1g2xy"]
 
 [ext_resource type="Texture2D" uid="uid://8e7icvpxalrq" path="res://assets/SALON/SALÓN_BACK.jpg" id="1_boed7"]
 [ext_resource type="Script" path="res://escena/SALA.gd" id="1_lulu1"]
-[ext_resource type="Texture2D" uid="uid://cdmw3j1r4ub3n" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0000.png" id="2_huf8k"]
-[ext_resource type="Texture2D" uid="uid://dxwxha52wcwpc" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0001.png" id="3_ukhxl"]
-[ext_resource type="Texture2D" uid="uid://cgfy02le5bb4i" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0002.png" id="4_4gb0c"]
-[ext_resource type="Texture2D" uid="uid://rbbj6ahp0btr" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0003.png" id="5_dq831"]
-[ext_resource type="Texture2D" uid="uid://cbbwmk0vtmcqk" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0004.png" id="6_876kf"]
-[ext_resource type="Texture2D" uid="uid://c2vgingrpdam" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0005.png" id="7_6w538"]
-[ext_resource type="Texture2D" uid="uid://d331fvu44oa4e" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0006.png" id="8_0t2rm"]
-[ext_resource type="Texture2D" uid="uid://yc5hwgt1v4ks" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0007.png" id="9_cj22d"]
-[ext_resource type="Texture2D" uid="uid://cvl4ls4gdhpwg" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0008.png" id="10_5fthi"]
-[ext_resource type="Texture2D" uid="uid://c0vg67lpqcocl" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0009.png" id="11_rq5ii"]
-[ext_resource type="Texture2D" uid="uid://dd6rp4e3coasf" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0010.png" id="12_pv8r5"]
-[ext_resource type="Texture2D" uid="uid://dgno7ywtig4t" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0011.png" id="13_q2y67"]
-[ext_resource type="Texture2D" uid="uid://bqc3bsewhhbbp" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0012.png" id="14_dd5u4"]
-[ext_resource type="Texture2D" uid="uid://cixecourqxgio" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0013.png" id="15_6ncbp"]
-[ext_resource type="Texture2D" uid="uid://b10kydbig1ndt" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0014.png" id="16_pofu4"]
-[ext_resource type="Texture2D" uid="uid://dqod6looywvoo" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0015.png" id="17_185id"]
-[ext_resource type="Texture2D" uid="uid://0fbbv3slb00a" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0016.png" id="18_d1eb6"]
-[ext_resource type="Texture2D" uid="uid://t4b5avxdit2x" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0017.png" id="19_u63p5"]
-[ext_resource type="Texture2D" uid="uid://cj1wksfqyscxh" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0018.png" id="20_yqsvd"]
-[ext_resource type="Texture2D" uid="uid://beyremqvgky1m" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0019.png" id="21_76awr"]
-[ext_resource type="Texture2D" uid="uid://bm38hoxs6hdgn" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0020.png" id="22_fnaai"]
-[ext_resource type="Texture2D" uid="uid://bkukqaa3ennxh" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0021.png" id="23_2rltr"]
-[ext_resource type="Texture2D" uid="uid://dlyow6452yh2x" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0022.png" id="24_27kpb"]
-[ext_resource type="Texture2D" uid="uid://bjh8w81ewb3yo" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0023.png" id="25_ajt0n"]
-[ext_resource type="Texture2D" uid="uid://c8e1ujupwoo1j" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0024.png" id="26_e5k57"]
-[ext_resource type="Texture2D" uid="uid://tj106gewnpew" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0025.png" id="27_l5rdo"]
-[ext_resource type="Texture2D" uid="uid://okxyp0h8nrwd" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0026.png" id="28_sp3os"]
-[ext_resource type="Texture2D" uid="uid://bi01iltmnycia" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0027.png" id="29_xxblj"]
-[ext_resource type="Texture2D" uid="uid://hvufe5mvaec0" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0028.png" id="30_4fof1"]
-[ext_resource type="Texture2D" uid="uid://bym52nblgy42e" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0029.png" id="31_j26xg"]
-[ext_resource type="Texture2D" uid="uid://djtrefi8pjukx" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0030.png" id="32_rws7e"]
-[ext_resource type="Texture2D" uid="uid://ccevcc1ll7viu" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0031.png" id="33_wm78u"]
-[ext_resource type="Texture2D" uid="uid://xa3vddfqqb6j" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0032.png" id="34_ppmas"]
-[ext_resource type="Texture2D" uid="uid://bjbjt0iyivev6" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0033.png" id="35_iiema"]
-[ext_resource type="Texture2D" uid="uid://b6tovqtdp4sln" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0034.png" id="36_u36c1"]
-[ext_resource type="Texture2D" uid="uid://c53d7pnrner28" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0035.png" id="37_kv3kj"]
-[ext_resource type="Texture2D" uid="uid://dhhbyhhs1ppsi" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0036.png" id="38_kqsl8"]
-[ext_resource type="Texture2D" uid="uid://0uygy3p4o64k" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0037.png" id="39_tv6x1"]
-[ext_resource type="Texture2D" uid="uid://bfudqhq0tm3tv" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0038.png" id="40_josyr"]
-[ext_resource type="Texture2D" uid="uid://ber1autwugob2" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0039.png" id="41_0hq8q"]
-[ext_resource type="Texture2D" uid="uid://ck312gu62wa6v" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0040.png" id="42_1l3lp"]
-[ext_resource type="Texture2D" uid="uid://cb7lmijnq660x" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0041.png" id="43_dg0eb"]
-[ext_resource type="Texture2D" uid="uid://n2ktlfuovuf5" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0042.png" id="44_y5tor"]
-[ext_resource type="Texture2D" uid="uid://b1ctk48vh7kld" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0043.png" id="45_ubbcn"]
-[ext_resource type="Texture2D" uid="uid://cwa0ivfbu2npf" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0044.png" id="46_07mqq"]
-[ext_resource type="Texture2D" uid="uid://c1m3ebn156mt1" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0045.png" id="47_ge8br"]
-[ext_resource type="Texture2D" uid="uid://b8lhf6edcnloj" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0046.png" id="48_rj5cy"]
-[ext_resource type="Texture2D" uid="uid://cumry0dmwntuq" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0047.png" id="49_wgedf"]
-[ext_resource type="Texture2D" uid="uid://ct1h5pwkmeots" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0048.png" id="50_5bw33"]
-[ext_resource type="Texture2D" uid="uid://pm6njxgwii2l" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0049.png" id="51_dqdgh"]
-[ext_resource type="Texture2D" uid="uid://d0gn86asjjken" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0050.png" id="52_g0oe0"]
-[ext_resource type="Texture2D" uid="uid://dbuwc0fxdkdv6" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0051.png" id="53_47q5o"]
-[ext_resource type="Texture2D" uid="uid://daq084bqy7gif" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0052.png" id="54_x3uth"]
-[ext_resource type="Texture2D" uid="uid://bnf4vbplky842" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0053.png" id="55_e8xs4"]
-[ext_resource type="Texture2D" uid="uid://boeenjr8p2ibt" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0054.png" id="56_nt7jv"]
-[ext_resource type="Texture2D" uid="uid://llg1hslnhiyg" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0055.png" id="57_7244c"]
-[ext_resource type="Texture2D" uid="uid://bskjuo32ucvog" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0056.png" id="58_x70c0"]
-[ext_resource type="Texture2D" uid="uid://b3lf8q43qq2dm" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0057.png" id="59_67i3p"]
-[ext_resource type="Texture2D" uid="uid://bmmp64yxlifby" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0058.png" id="60_cb7pq"]
-[ext_resource type="Texture2D" uid="uid://0s5km18gnxom" path="res://assets/animaciones/Gato4/GATO_0005_10/GATO4_0059.png" id="61_isib6"]
-[ext_resource type="Texture2D" uid="uid://3c1f3cu8utcf" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0000.png" id="62_ce1l8"]
-[ext_resource type="Texture2D" uid="uid://m1gkrvo083jb" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0001.png" id="63_152l8"]
-[ext_resource type="Texture2D" uid="uid://3n0mb5r1o6av" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0002.png" id="64_rjh51"]
-[ext_resource type="Texture2D" uid="uid://d1rnwhtkotm7p" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0003.png" id="65_iwx77"]
-[ext_resource type="Texture2D" uid="uid://btyhb0kgxqpc1" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0004.png" id="66_pms3e"]
-[ext_resource type="Texture2D" uid="uid://dkcd42gneskcr" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0005.png" id="67_dgmjt"]
-[ext_resource type="Texture2D" uid="uid://bqvfcno6r8ct7" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0006.png" id="68_283lp"]
-[ext_resource type="Texture2D" uid="uid://qh1brx7wawwy" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0007.png" id="69_kc8cd"]
-[ext_resource type="Texture2D" uid="uid://cwmqd7uynxgnu" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0008.png" id="70_k0xty"]
-[ext_resource type="Texture2D" uid="uid://c1komt1xddt2t" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0009.png" id="71_djlp0"]
-[ext_resource type="Texture2D" uid="uid://cu6xh6htyjmgp" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0010.png" id="72_0x3y4"]
-[ext_resource type="Texture2D" uid="uid://bc5u4nt4axxyl" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0011.png" id="73_qmgum"]
-[ext_resource type="Texture2D" uid="uid://c0mupr8mxjnsw" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0012.png" id="74_sm6f2"]
-[ext_resource type="Texture2D" uid="uid://dya1katjoc722" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0013.png" id="75_u3vv3"]
-[ext_resource type="Texture2D" uid="uid://yqwhfrfl3qd8" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0014.png" id="76_baqu5"]
-[ext_resource type="Texture2D" uid="uid://8lf0ptrlcrv6" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0015.png" id="77_65i3n"]
-[ext_resource type="Texture2D" uid="uid://d1gjo3ibssr32" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0016.png" id="78_6d0hd"]
-[ext_resource type="Texture2D" uid="uid://bo4kgbrob5nf4" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0017.png" id="79_0qn6v"]
-[ext_resource type="Texture2D" uid="uid://drnwdcjgavegs" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0018.png" id="80_wdsmw"]
-[ext_resource type="Texture2D" uid="uid://cps6gqx0sdpuj" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0019.png" id="81_c5yvi"]
-[ext_resource type="Texture2D" uid="uid://cttq6a7fw7egv" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0020.png" id="82_bgyqd"]
-[ext_resource type="Texture2D" uid="uid://ru4vopn44xvs" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0021.png" id="83_bmbxk"]
-[ext_resource type="Texture2D" uid="uid://bdi7ha14vnnbi" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0022.png" id="84_xja03"]
-[ext_resource type="Texture2D" uid="uid://d146paw7gt4vl" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0023.png" id="85_c6m2h"]
-[ext_resource type="Texture2D" uid="uid://chh2xetdblaqd" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0024.png" id="86_tv75a"]
-[ext_resource type="Texture2D" uid="uid://c3sqkqyddkj3c" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0025.png" id="87_6jjmw"]
-[ext_resource type="Texture2D" uid="uid://cvy35sug4j8d8" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0026.png" id="88_i10mp"]
-[ext_resource type="Texture2D" uid="uid://ctcuv8n4vod0l" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0027.png" id="89_aj8uu"]
-[ext_resource type="Texture2D" uid="uid://cgy3mlqxbr1yh" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0028.png" id="90_mmppp"]
-[ext_resource type="Texture2D" uid="uid://cw0e0camg12nr" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0029.png" id="91_ye3es"]
-[ext_resource type="Texture2D" uid="uid://x2e6t4youwl6" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0030.png" id="92_37fqg"]
-[ext_resource type="Texture2D" uid="uid://cec87qp4avqb1" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0031.png" id="93_ccgkk"]
-[ext_resource type="Texture2D" uid="uid://bqd4mtnffgtfs" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0032.png" id="94_m2lqo"]
-[ext_resource type="Texture2D" uid="uid://ugny458yc7to" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0033.png" id="95_b8qe3"]
-[ext_resource type="Texture2D" uid="uid://b6ffx10rm7w7g" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0034.png" id="96_pxnrn"]
-[ext_resource type="Texture2D" uid="uid://c1thjk3wyb8hu" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0035.png" id="97_8ekh5"]
-[ext_resource type="Texture2D" uid="uid://b8earwsuv1im0" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0036.png" id="98_qxmur"]
-[ext_resource type="Texture2D" uid="uid://dgake2paic8bv" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0037.png" id="99_u8ex2"]
-[ext_resource type="Texture2D" uid="uid://ctiugmdfnicwa" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0038.png" id="100_d64rc"]
-[ext_resource type="Texture2D" uid="uid://cait7ajsdo8jt" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0039.png" id="101_vvp06"]
-[ext_resource type="Texture2D" uid="uid://bd3og6hwjrtte" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0040.png" id="102_qvd0j"]
-[ext_resource type="Texture2D" uid="uid://8mkq5hofyon1" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0041.png" id="103_2at4w"]
-[ext_resource type="Texture2D" uid="uid://b5l7t6rf745h6" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0042.png" id="104_5tmp3"]
-[ext_resource type="Texture2D" uid="uid://ri2yfabt0qlm" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0043.png" id="105_sqqjp"]
-[ext_resource type="Texture2D" uid="uid://bhbolachypebh" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0044.png" id="106_80xux"]
-[ext_resource type="Texture2D" uid="uid://b4ov5pdkw6mle" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0045.png" id="107_mee6f"]
-[ext_resource type="Texture2D" uid="uid://bkcrke3k6tc4q" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0046.png" id="108_aei0a"]
-[ext_resource type="Texture2D" uid="uid://2bdy2xqgo0ja" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0047.png" id="109_jbor1"]
-[ext_resource type="Texture2D" uid="uid://7ef3odvd5fsj" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0048.png" id="110_k81u1"]
-[ext_resource type="Texture2D" uid="uid://b7j3amyi2bqyk" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0049.png" id="111_m4skt"]
-[ext_resource type="Texture2D" uid="uid://bj4go5md0mdqq" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0050.png" id="112_4psfq"]
-[ext_resource type="Texture2D" uid="uid://ca7ow5nep3q75" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0051.png" id="113_gsljd"]
-[ext_resource type="Texture2D" uid="uid://cat05ska162hb" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0052.png" id="114_b54gi"]
-[ext_resource type="Texture2D" uid="uid://4520d6q4wo5l" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0053.png" id="115_n60uh"]
-[ext_resource type="Texture2D" uid="uid://cojeo8jveayc" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0054.png" id="116_ce5jk"]
-[ext_resource type="Texture2D" uid="uid://cvidmd6xjk7ue" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0055.png" id="117_8bht0"]
-[ext_resource type="Texture2D" uid="uid://d2oiqixejhy2t" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0056.png" id="118_o7ei8"]
-[ext_resource type="Texture2D" uid="uid://b0c6a2uxpuh7m" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0057.png" id="119_dq8uw"]
-[ext_resource type="Texture2D" uid="uid://q8s4qwdi4q6p" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0058.png" id="120_25tdg"]
-[ext_resource type="Texture2D" uid="uid://dxssldkr343pr" path="res://assets/animaciones/Gato5/GATO_0006_9/GATO5_0059.png" id="121_rlbjm"]
+[ext_resource type="Texture2D" uid="uid://dovhknlf8euke" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00000.png" id="65_uc5ri"]
+[ext_resource type="Texture2D" uid="uid://r5oi6gqydvvm" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00001.png" id="66_j27yy"]
+[ext_resource type="Texture2D" uid="uid://d2mtc1cnhvfq5" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00002.png" id="67_vyftn"]
+[ext_resource type="Texture2D" uid="uid://2itruoefutdo" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00003.png" id="68_hvfuc"]
+[ext_resource type="Texture2D" uid="uid://cui64kk5qb5sx" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00004.png" id="69_m0jti"]
+[ext_resource type="Texture2D" uid="uid://2x0x5ej7fi75" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00005.png" id="70_0v4ky"]
+[ext_resource type="Texture2D" uid="uid://cwdmqvta8qd3m" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00006.png" id="71_o0upy"]
+[ext_resource type="Texture2D" uid="uid://c6pfisjbnjosm" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00007.png" id="72_vqcur"]
+[ext_resource type="Texture2D" uid="uid://dguh4pd13uc8" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00008.png" id="73_2faq0"]
+[ext_resource type="Texture2D" uid="uid://b5m4e8edkjvuh" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00009.png" id="74_gu53b"]
+[ext_resource type="Texture2D" uid="uid://kl502v3ag8h0" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00010.png" id="75_uvxlj"]
+[ext_resource type="Texture2D" uid="uid://3k1p1l8jsve3" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00011.png" id="76_e01oi"]
+[ext_resource type="Texture2D" uid="uid://d1knm1riwhpf3" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00012.png" id="77_0g37q"]
+[ext_resource type="Texture2D" uid="uid://c7amhfiyanqji" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00013.png" id="78_vxrc4"]
+[ext_resource type="Texture2D" uid="uid://dcprrejrxqpx1" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00014.png" id="79_o577q"]
+[ext_resource type="Texture2D" uid="uid://dj5ujah0krvwu" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00015.png" id="80_ociai"]
+[ext_resource type="Texture2D" uid="uid://dg8bk263khqos" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00016.png" id="81_7mqq1"]
+[ext_resource type="Texture2D" uid="uid://b2peep6533l4l" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00017.png" id="82_gh27a"]
+[ext_resource type="Texture2D" uid="uid://ddlqv5gul8rf3" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00018.png" id="83_gwxn3"]
+[ext_resource type="Texture2D" uid="uid://v23rjnlhw2e7" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00019.png" id="84_6tg33"]
+[ext_resource type="Texture2D" uid="uid://bm0n8mbxw2dxi" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00020.png" id="85_4rnad"]
+[ext_resource type="Texture2D" uid="uid://cs3rfa3t2dwa1" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00021.png" id="86_63sj4"]
+[ext_resource type="Texture2D" uid="uid://bid36126sronj" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00022.png" id="87_kpoo5"]
+[ext_resource type="Texture2D" uid="uid://c0sp5jf4m4y2k" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00023.png" id="88_4vj6m"]
+[ext_resource type="Texture2D" uid="uid://g4w3mr0wo7an" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00024.png" id="89_ljfoy"]
+[ext_resource type="Texture2D" uid="uid://x40u3wjrbb2d" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00025.png" id="90_vkq8u"]
+[ext_resource type="Texture2D" uid="uid://dbx1jtk24c4x0" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00026.png" id="91_3i0bd"]
+[ext_resource type="Texture2D" uid="uid://cje8eebhhh7r2" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00027.png" id="92_vecrg"]
+[ext_resource type="Texture2D" uid="uid://c6lujwwiupg4c" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00028.png" id="93_ue31d"]
+[ext_resource type="Texture2D" uid="uid://ca1kljo781dh8" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00029.png" id="94_gryhw"]
+[ext_resource type="Texture2D" uid="uid://drupj7ns4s1oq" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00030.png" id="95_ko6d8"]
+[ext_resource type="Texture2D" uid="uid://cybpmwnpcvb6t" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00031.png" id="96_s21l7"]
+[ext_resource type="Texture2D" uid="uid://lb3o8x41im14" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00032.png" id="97_0jl5h"]
+[ext_resource type="Texture2D" uid="uid://carhtvwhnoqto" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00033.png" id="98_xf6u7"]
+[ext_resource type="Texture2D" uid="uid://dids1rhy6jxlg" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00034.png" id="99_1h53m"]
+[ext_resource type="Texture2D" uid="uid://bcyjx2sqktwj8" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00035.png" id="100_wvqxo"]
+[ext_resource type="Texture2D" uid="uid://dr4vfp42fipun" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00036.png" id="101_xsth5"]
+[ext_resource type="Texture2D" uid="uid://c7nbp3vy0ggqk" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00037.png" id="102_if1k7"]
+[ext_resource type="Texture2D" uid="uid://bwdf7cwpcemog" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00038.png" id="103_37e5p"]
+[ext_resource type="Texture2D" uid="uid://0rq2684ug04w" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00039.png" id="104_ggbm0"]
+[ext_resource type="Texture2D" uid="uid://bmd7u5wxpdcl7" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00040.png" id="105_o8fpa"]
+[ext_resource type="Texture2D" uid="uid://dr4e6cxi6fa4y" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00041.png" id="106_6e1mn"]
+[ext_resource type="Texture2D" uid="uid://bwmjy7bih36gn" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00042.png" id="107_62u25"]
+[ext_resource type="Texture2D" uid="uid://b0g34lh63ga2l" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00043.png" id="108_f33bs"]
+[ext_resource type="Texture2D" uid="uid://dnohvx32ovfp" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00044.png" id="109_xngdq"]
+[ext_resource type="Texture2D" uid="uid://ukpdoplgc7g2" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00045.png" id="110_fl32a"]
+[ext_resource type="Texture2D" uid="uid://bq5jra24r6cg8" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00046.png" id="111_0n7r3"]
+[ext_resource type="Texture2D" uid="uid://c7ludltksegit" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00047.png" id="112_3rwrs"]
+[ext_resource type="Texture2D" uid="uid://ca42r6nwh5iss" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00048.png" id="113_rqh1u"]
+[ext_resource type="Texture2D" uid="uid://cbb4skhhyor47" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00049.png" id="114_j75m2"]
+[ext_resource type="Texture2D" uid="uid://dfg551vj3cvl7" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00050.png" id="115_dwgu1"]
+[ext_resource type="Texture2D" uid="uid://lwnloitg1i1r" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00051.png" id="116_oohen"]
+[ext_resource type="Texture2D" uid="uid://c5mc4qul6gumn" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00052.png" id="117_jg4s7"]
+[ext_resource type="Texture2D" uid="uid://dx2b62ccsdq8a" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00053.png" id="118_o0c0c"]
+[ext_resource type="Texture2D" uid="uid://du6xcvcb6vtpg" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00027.png" id="118_pywfl"]
+[ext_resource type="Texture2D" uid="uid://7fxbsj7hyd54" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00028.png" id="119_45wxl"]
+[ext_resource type="Texture2D" uid="uid://tv2xs2egm4os" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00054.png" id="119_rnmt1"]
+[ext_resource type="Texture2D" uid="uid://cbueqpuqqe8v3" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00055.png" id="120_0ky0d"]
+[ext_resource type="Texture2D" uid="uid://c6vtrh7xbf6li" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00029.png" id="120_8rv1d"]
+[ext_resource type="Texture2D" uid="uid://dfkt66l11fwbp" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00056.png" id="121_31oqr"]
+[ext_resource type="Texture2D" uid="uid://c1irkblx6ok5x" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00030.png" id="121_qxmmo"]
+[ext_resource type="Texture2D" uid="uid://0vhdigtvqmc6" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00057.png" id="122_7l02w"]
 [ext_resource type="Texture2D" uid="uid://cemvqivueqh0s" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0000.png" id="122_r01xo"]
+[ext_resource type="Texture2D" uid="uid://etpe5iuliknm" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00031.png" id="122_x7xcy"]
+[ext_resource type="Texture2D" uid="uid://bgsr0sqrce2eq" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00032.png" id="123_1rvsp"]
+[ext_resource type="Texture2D" uid="uid://baq6s4qotk8gr" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00058.png" id="123_dmlxe"]
 [ext_resource type="Texture2D" uid="uid://c575ocb5gihuq" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0001.png" id="123_im75f"]
+[ext_resource type="Texture2D" uid="uid://b23w1b8j73yrr" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00033.png" id="124_7naa0"]
+[ext_resource type="Texture2D" uid="uid://b72qv4ru6wy0d" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00059.png" id="124_ee0wq"]
 [ext_resource type="Texture2D" uid="uid://0pbaqn4726re" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0002.png" id="124_yhovf"]
+[ext_resource type="Texture2D" uid="uid://bygpfws5y82am" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00060.png" id="125_a421y"]
+[ext_resource type="Texture2D" uid="uid://de7nrycios0pa" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00034.png" id="125_dv5co"]
 [ext_resource type="Texture2D" uid="uid://bwcl6x3dfli4u" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0003.png" id="125_tkekt"]
+[ext_resource type="Texture2D" uid="uid://cl40w018p3sju" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00061.png" id="126_47q0l"]
 [ext_resource type="Texture2D" uid="uid://buj02dy760ywm" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0004.png" id="126_gb2v1"]
+[ext_resource type="Texture2D" uid="uid://csl6ydmiexkkx" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00035.png" id="126_ry26c"]
+[ext_resource type="Texture2D" uid="uid://cn5ob5xh752f7" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00062.png" id="127_4a5dr"]
+[ext_resource type="Texture2D" uid="uid://cx8t8is5nin2d" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00036.png" id="127_ctui7"]
 [ext_resource type="Texture2D" uid="uid://b02xex0476vjy" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0005.png" id="127_u15ic"]
+[ext_resource type="Texture2D" uid="uid://c6otcd4jyp24m" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00037.png" id="128_4j82f"]
 [ext_resource type="Texture2D" uid="uid://qlfr6xqh8dhb" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0006.png" id="128_c6s7m"]
+[ext_resource type="Texture2D" uid="uid://dg0xtoxhef5rw" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00063.png" id="128_nawwj"]
 [ext_resource type="Texture2D" uid="uid://cxwd5jp28qnus" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0007.png" id="129_adv1x"]
+[ext_resource type="Texture2D" uid="uid://cu4trlvu8m8as" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00038.png" id="129_fmyfu"]
+[ext_resource type="Texture2D" uid="uid://che743x2qp8ec" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00064.png" id="129_jp0fj"]
 [ext_resource type="Texture2D" uid="uid://eslmie5o8rg4" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0008.png" id="130_3vnh8"]
+[ext_resource type="Texture2D" uid="uid://bg0ihunkih8u3" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00039.png" id="130_37ed6"]
+[ext_resource type="Texture2D" uid="uid://j8k5u3i40k80" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00065.png" id="130_jawo4"]
+[ext_resource type="Texture2D" uid="uid://ct77m4v5hgmx2" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00066.png" id="131_c5xu1"]
 [ext_resource type="Texture2D" uid="uid://cjcn4mwrbhn46" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0009.png" id="131_ju8jx"]
+[ext_resource type="Texture2D" uid="uid://bpyhqhleytnho" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00040.png" id="131_ldxk4"]
+[ext_resource type="Texture2D" uid="uid://bl2ydek8p0edy" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00041.png" id="132_5sf2p"]
 [ext_resource type="Texture2D" uid="uid://bvyi0srbj5xs5" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0010.png" id="132_b0cac"]
+[ext_resource type="Texture2D" uid="uid://dkwlylrfe7hwd" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00067.png" id="132_crg7a"]
 [ext_resource type="Texture2D" uid="uid://b6hec327fpm3f" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0011.png" id="133_1lhu3"]
+[ext_resource type="Texture2D" uid="uid://hlrug2a1e6w5" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00042.png" id="133_pm48g"]
+[ext_resource type="Texture2D" uid="uid://dogoo14g2odf2" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00068.png" id="133_ug6mq"]
 [ext_resource type="Texture2D" uid="uid://cs8r110wut3of" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0012.png" id="134_dvijd"]
+[ext_resource type="Texture2D" uid="uid://cncr87wpcegdo" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00069.png" id="134_e6w41"]
+[ext_resource type="Texture2D" uid="uid://dbqtxdrsmrcjo" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00043.png" id="134_oda3s"]
+[ext_resource type="Texture2D" uid="uid://dq4c5yxfctfp7" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00070.png" id="135_jjtyv"]
+[ext_resource type="Texture2D" uid="uid://cd2ft84xcmiab" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00044.png" id="135_s0mar"]
 [ext_resource type="Texture2D" uid="uid://coyeltif06r4s" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0013.png" id="135_v65tl"]
+[ext_resource type="Texture2D" uid="uid://dprvdad48r3gq" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00045.png" id="136_am32h"]
 [ext_resource type="Texture2D" uid="uid://bsiliwqamcmdq" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0014.png" id="136_b4mg5"]
+[ext_resource type="Texture2D" uid="uid://uvxf6ckfh6kj" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00071.png" id="136_v2g5c"]
+[ext_resource type="Texture2D" uid="uid://cu1kidmxeudy" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00072.png" id="137_jx722"]
 [ext_resource type="Texture2D" uid="uid://rwmiqaoycoqd" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0015.png" id="137_l2exw"]
+[ext_resource type="Texture2D" uid="uid://bjxvkfij3fdp7" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00046.png" id="137_obhxj"]
 [ext_resource type="Texture2D" uid="uid://cnyjxgo08bq5r" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0016.png" id="138_jwvfv"]
+[ext_resource type="Texture2D" uid="uid://dobrjhlaxs147" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00047.png" id="138_rruce"]
+[ext_resource type="Texture2D" uid="uid://bvv3gav6qwd5g" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00073.png" id="138_sb815"]
+[ext_resource type="Texture2D" uid="uid://y62d7p7tfu54" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00048.png" id="139_dyebj"]
+[ext_resource type="Texture2D" uid="uid://bwow60ganb1s7" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00074.png" id="139_ifyvo"]
 [ext_resource type="Texture2D" uid="uid://bjbqdcgfbfbax" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0017.png" id="139_su6ki"]
+[ext_resource type="Texture2D" uid="uid://bbrntay28sa7t" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00075.png" id="140_2b2w7"]
 [ext_resource type="Texture2D" uid="uid://b7jlv21gmce5h" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0018.png" id="140_dwout"]
+[ext_resource type="Texture2D" uid="uid://bqatdo132spb" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00049.png" id="140_wmqml"]
 [ext_resource type="Texture2D" uid="uid://ddui656vtjd0y" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0019.png" id="141_6nq0n"]
+[ext_resource type="Texture2D" uid="uid://bfv0006301ria" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00076.png" id="141_dmtlk"]
+[ext_resource type="Texture2D" uid="uid://cdh2wdhtxhs5o" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00050.png" id="141_h2gp1"]
+[ext_resource type="Texture2D" uid="uid://bc2qtc2skm2an" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00051.png" id="142_2gubh"]
+[ext_resource type="Texture2D" uid="uid://cfyemuom44110" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00077.png" id="142_hpqlm"]
 [ext_resource type="Texture2D" uid="uid://cm3vuplfjgv10" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0020.png" id="142_hvnae"]
+[ext_resource type="Texture2D" uid="uid://cdcrqlx1qhxba" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00078.png" id="143_8t4yy"]
+[ext_resource type="Texture2D" uid="uid://is431mre3y4" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00052.png" id="143_mu4ge"]
 [ext_resource type="Texture2D" uid="uid://cosldyk3pchao" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0021.png" id="143_qvrnx"]
+[ext_resource type="Texture2D" uid="uid://bhsbye62axx8e" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00053.png" id="144_rcyft"]
+[ext_resource type="Texture2D" uid="uid://dmp8gwvan4yka" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00079.png" id="144_tfpgw"]
 [ext_resource type="Texture2D" uid="uid://1847x7w02r65" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0022.png" id="144_xxapv"]
+[ext_resource type="Texture2D" uid="uid://bhfdkt51hyk13" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00054.png" id="145_063kp"]
 [ext_resource type="Texture2D" uid="uid://b6mtaib4d78mu" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0023.png" id="145_r115t"]
+[ext_resource type="Texture2D" uid="uid://bt0f1aoyqgqsy" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00080.png" id="145_s8pbh"]
+[ext_resource type="Texture2D" uid="uid://cg5gmjqdhyrnx" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00081.png" id="146_22f30"]
+[ext_resource type="Texture2D" uid="uid://gwtrhpejnygp" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00055.png" id="146_780jk"]
 [ext_resource type="Texture2D" uid="uid://cgxcqp37fwm3a" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0024.png" id="146_y7280"]
+[ext_resource type="Texture2D" uid="uid://laj4s2vv8uy" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00056.png" id="147_f7k4e"]
 [ext_resource type="Texture2D" uid="uid://b5aamsv6kswwx" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0025.png" id="147_k4yvj"]
+[ext_resource type="Texture2D" uid="uid://6cfooiej4iw2" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00082.png" id="147_wjc1g"]
+[ext_resource type="Texture2D" uid="uid://cnnkc3pn1acw3" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00083.png" id="148_86pbq"]
+[ext_resource type="Texture2D" uid="uid://cpbtlfnarp2da" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00057.png" id="148_e3lwl"]
 [ext_resource type="Texture2D" uid="uid://dhoo2o6jlw18j" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0026.png" id="148_hxm8w"]
+[ext_resource type="Texture2D" uid="uid://cmf2gkeik8a8l" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00058.png" id="149_kawwo"]
+[ext_resource type="Texture2D" uid="uid://da5qppgjask86" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00084.png" id="149_lusyu"]
 [ext_resource type="Texture2D" uid="uid://00ru0ruc3yae" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0027.png" id="149_mknji"]
+[ext_resource type="Texture2D" uid="uid://cmveks2qxv1b1" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00085.png" id="150_3hpqt"]
+[ext_resource type="Texture2D" uid="uid://ddq3luj5ywoce" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00059.png" id="150_385jj"]
 [ext_resource type="Texture2D" uid="uid://dcr5f8grtymrk" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0028.png" id="150_dthj2"]
 [ext_resource type="Texture2D" uid="uid://dp7gka0ah5spe" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0029.png" id="151_edvay"]
+[ext_resource type="Texture2D" uid="uid://bnmy7p4w3r1ji" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00086.png" id="151_fpocj"]
+[ext_resource type="Texture2D" uid="uid://038v7aq75564" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00060.png" id="151_mltop"]
 [ext_resource type="Texture2D" uid="uid://usjiaux8born" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0030.png" id="152_bjc5p"]
+[ext_resource type="Texture2D" uid="uid://b2b02g11cawuu" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00061.png" id="152_hp0vh"]
+[ext_resource type="Texture2D" uid="uid://55alsoy522ua" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00087.png" id="152_mr4hh"]
+[ext_resource type="Texture2D" uid="uid://d1f8h00wqla8b" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00088.png" id="153_tqhvv"]
 [ext_resource type="Texture2D" uid="uid://dphqkdd721r6m" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0031.png" id="153_tyugh"]
+[ext_resource type="Texture2D" uid="uid://11xrwsdclktg" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00062.png" id="153_v465b"]
 [ext_resource type="Texture2D" uid="uid://bmmke63ev4cwh" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0032.png" id="154_6vj0j"]
+[ext_resource type="Texture2D" uid="uid://bx5dpm2s32r8t" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00063.png" id="154_12n2r"]
+[ext_resource type="Texture2D" uid="uid://bsfbv04ig5qcv" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00089.png" id="154_ut1ts"]
+[ext_resource type="Texture2D" uid="uid://cj83autwmr16" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00090.png" id="155_5gmyi"]
+[ext_resource type="Texture2D" uid="uid://dy8h8otvge3my" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00064.png" id="155_mb1xd"]
 [ext_resource type="Texture2D" uid="uid://dygwovi1soiu5" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0033.png" id="155_ydkaa"]
 [ext_resource type="Texture2D" uid="uid://bemt0cv7orwpr" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0034.png" id="156_2irqg"]
+[ext_resource type="Texture2D" uid="uid://b6qffxxuhfnl6" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00065.png" id="156_dikmy"]
+[ext_resource type="Texture2D" uid="uid://csn8dib6hhipo" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00091.png" id="156_yk3rq"]
+[ext_resource type="Texture2D" uid="uid://bp26slj87nxla" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00092.png" id="157_6ereg"]
+[ext_resource type="Texture2D" uid="uid://dtmchg4jc3p38" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00066.png" id="157_ayovj"]
 [ext_resource type="Texture2D" uid="uid://cg6vtsiwpq5s6" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0035.png" id="157_neoej"]
+[ext_resource type="Texture2D" uid="uid://b0ynd1j7r8sol" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00093.png" id="158_4pk2q"]
+[ext_resource type="Texture2D" uid="uid://d2gmtxyp7fdif" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00067.png" id="158_pfhco"]
 [ext_resource type="Texture2D" uid="uid://xmayn74b6to0" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0036.png" id="158_re8hs"]
+[ext_resource type="Texture2D" uid="uid://b2psin3lvhmah" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00094.png" id="159_1y2no"]
+[ext_resource type="Texture2D" uid="uid://c2tk5kd4t27ed" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00068.png" id="159_3mekr"]
 [ext_resource type="Texture2D" uid="uid://batqchfux1tsy" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0037.png" id="159_t4yv4"]
+[ext_resource type="Texture2D" uid="uid://bycedq17twavg" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00069.png" id="160_3w8to"]
+[ext_resource type="Texture2D" uid="uid://ccymjbpppkplh" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00095.png" id="160_6ngnu"]
 [ext_resource type="Texture2D" uid="uid://cjs1j84x22t4f" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0038.png" id="160_x4axa"]
+[ext_resource type="Texture2D" uid="uid://byd4fgelokduq" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00096.png" id="161_0jy8r"]
 [ext_resource type="Texture2D" uid="uid://by4yc2mqgos1n" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0039.png" id="161_poyte"]
+[ext_resource type="Texture2D" uid="uid://14iy31nc4nn6" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00070.png" id="161_wd6v4"]
+[ext_resource type="Texture2D" uid="uid://hxua2sk0hyle" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00097.png" id="162_btxmy"]
+[ext_resource type="Texture2D" uid="uid://bse0r0kn6ti6c" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00071.png" id="162_tawbu"]
 [ext_resource type="Texture2D" uid="uid://iukxbwlxdign" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0040.png" id="162_xsx6u"]
+[ext_resource type="Texture2D" uid="uid://c0tlkj6hrfc1m" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00098.png" id="163_5ks0g"]
+[ext_resource type="Texture2D" uid="uid://5cxqmvn4hm8n" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00072.png" id="163_nm5ia"]
 [ext_resource type="Texture2D" uid="uid://x330n17xo4sp" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0041.png" id="163_s1eyk"]
 [ext_resource type="Texture2D" uid="uid://c1sscw1jukels" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0042.png" id="164_6q6gh"]
+[ext_resource type="Texture2D" uid="uid://2rnb1o6k43rh" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00099.png" id="164_25rdh"]
+[ext_resource type="Texture2D" uid="uid://bn0hlragi4v0r" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00073.png" id="164_ym4nf"]
+[ext_resource type="Texture2D" uid="uid://c4g7tli06nvxc" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00100.png" id="165_1xbgm"]
 [ext_resource type="Texture2D" uid="uid://biom6x2ehdjrv" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0043.png" id="165_g0x4v"]
+[ext_resource type="Texture2D" uid="uid://crouaoqnmlb3s" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00074.png" id="165_w2pfa"]
 [ext_resource type="Texture2D" uid="uid://2cy1omuq5ghn" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0044.png" id="166_2gs6q"]
+[ext_resource type="Texture2D" uid="uid://dnvcvv3eyldt2" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00101.png" id="166_j41r1"]
+[ext_resource type="Texture2D" uid="uid://13valmwxl8cd" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00075.png" id="166_kil6x"]
+[ext_resource type="Texture2D" uid="uid://cejtxxxbqbsl6" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00102.png" id="167_5jddr"]
 [ext_resource type="Texture2D" uid="uid://dkfg8adceurk7" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0045.png" id="167_e66ok"]
+[ext_resource type="Texture2D" uid="uid://bxtsxreydk1d" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00076.png" id="167_qckb0"]
+[ext_resource type="Texture2D" uid="uid://tqx6ajcyjyml" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00077.png" id="168_ehc2p"]
+[ext_resource type="Texture2D" uid="uid://4rndbihan5gi" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00103.png" id="168_luc5x"]
 [ext_resource type="Texture2D" uid="uid://i6k13ewvqqmr" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0046.png" id="168_r0jyd"]
+[ext_resource type="Texture2D" uid="uid://2uuhdktwmed1" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00078.png" id="169_2qii0"]
 [ext_resource type="Texture2D" uid="uid://cesxlrsvkjerm" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0047.png" id="169_252al"]
+[ext_resource type="Texture2D" uid="uid://yypy1364lww5" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00104.png" id="169_ltvay"]
 [ext_resource type="Texture2D" uid="uid://bti3uu6xcdjtd" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0048.png" id="170_fdrmi"]
+[ext_resource type="Texture2D" uid="uid://dsblfm3r8te3t" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00105.png" id="170_i57oj"]
+[ext_resource type="Texture2D" uid="uid://dww514k0c11rd" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00079.png" id="170_pm28e"]
+[ext_resource type="Texture2D" uid="uid://8e0cx64js35r" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00106.png" id="171_2haa2"]
 [ext_resource type="Texture2D" uid="uid://182hp72i6ket" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0049.png" id="171_10bj3"]
+[ext_resource type="Texture2D" uid="uid://bra446t7jtvxd" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00080.png" id="171_mt4qx"]
+[ext_resource type="Texture2D" uid="uid://b7k2bnv14qlrk" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00107.png" id="172_0wwvu"]
+[ext_resource type="Texture2D" uid="uid://crbn5bcwbu7li" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00081.png" id="172_f51sg"]
 [ext_resource type="Texture2D" uid="uid://bkiltlvmwjo05" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0050.png" id="172_iamm5"]
+[ext_resource type="Texture2D" uid="uid://dkqr78yibnqxd" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00082.png" id="173_akpg5"]
+[ext_resource type="Texture2D" uid="uid://c8rikor816t1u" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00108.png" id="173_b2s66"]
 [ext_resource type="Texture2D" uid="uid://cso5or48akn2c" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0051.png" id="173_nj7gy"]
+[ext_resource type="Texture2D" uid="uid://d0m4owmeeyu36" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00083.png" id="174_c2kko"]
+[ext_resource type="Texture2D" uid="uid://bfxhouwdwppp" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00109.png" id="174_hrsnd"]
 [ext_resource type="Texture2D" uid="uid://cnrh8520rojej" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0052.png" id="174_l8lpi"]
+[ext_resource type="Texture2D" uid="uid://co1s0a2ukh4hq" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00110.png" id="175_3nnfy"]
 [ext_resource type="Texture2D" uid="uid://bj3x72h2brwg7" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0053.png" id="175_covhm"]
+[ext_resource type="Texture2D" uid="uid://chsytvo6te3ch" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00084.png" id="175_uuf0y"]
+[ext_resource type="Texture2D" uid="uid://dumspogu6ok01" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00085.png" id="176_6jfje"]
+[ext_resource type="Texture2D" uid="uid://dkbk782kpse2v" path="res://animaciones/GatosAnimation/GATO9/GATO9/GATO9_00111.png" id="176_n4mws"]
 [ext_resource type="Texture2D" uid="uid://bkus43qnjaxkq" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0054.png" id="176_ppab3"]
+[ext_resource type="Texture2D" uid="uid://ec81vdblxx" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00086.png" id="177_1djj4"]
 [ext_resource type="Texture2D" uid="uid://ccoeo0vtn6f3b" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0055.png" id="177_kgdcq"]
 [ext_resource type="Texture2D" uid="uid://bt41vgku2fumj" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0056.png" id="178_cbh46"]
+[ext_resource type="Texture2D" uid="uid://bax5mqb1dlb7r" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00087.png" id="178_hctes"]
+[ext_resource type="Texture2D" uid="uid://sh0d3nlgftut" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00088.png" id="179_dmvl3"]
 [ext_resource type="Texture2D" uid="uid://lvi5iq7x2ihb" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0057.png" id="179_o1hau"]
+[ext_resource type="Texture2D" uid="uid://bspjctn12s8s0" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00089.png" id="180_ca3sv"]
 [ext_resource type="Texture2D" uid="uid://mrak2uf0jimg" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0058.png" id="180_ejk1e"]
 [ext_resource type="Texture2D" uid="uid://cu3ag2xnfyh3p" path="res://assets/animaciones/Gato2/GATO_0008_7/GATO2_0059.png" id="181_d42x2"]
+[ext_resource type="Texture2D" uid="uid://bv3etlk07s5i6" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00090.png" id="181_rn44y"]
+[ext_resource type="Texture2D" uid="uid://bkej07swsr0eh" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00091.png" id="182_b66x3"]
+[ext_resource type="Texture2D" uid="uid://wo7dgm7aqgiv" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00092.png" id="183_378l0"]
+[ext_resource type="Texture2D" uid="uid://dvi7wgq1uvx4t" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00093.png" id="184_nms2p"]
 [ext_resource type="Texture2D" uid="uid://pnrky8beat6f" path="res://assets/ALCOBA/ALCOBA_0000s_0003_Capa-1.png" id="185_mauiy"]
+[ext_resource type="Texture2D" uid="uid://beh7wm57y12ax" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00094.png" id="185_mgicm"]
 [ext_resource type="Texture2D" uid="uid://dmq4pc7kiw82f" path="res://assets/ALCOBA/catchgato1.png" id="186_feayb"]
+[ext_resource type="Texture2D" uid="uid://xr8oybajn4o7" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00095.png" id="186_jdh2g"]
 [ext_resource type="Texture2D" uid="uid://nkh8vicvpext" path="res://assets/SALON/SALÓN_0001s_0000s_0001_PARTITURA.png" id="186_pybxr"]
+[ext_resource type="Texture2D" uid="uid://bsrdrhftygqg1" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00096.png" id="187_0vsjr"]
 [ext_resource type="Texture2D" uid="uid://ow00iflu2tdy" path="res://assets/SALON/SALÓN_0001s_0002s_0007_EQUIPO-DE-SONIDO.png" id="187_4d4en"]
 [ext_resource type="Texture2D" uid="uid://dfuksnaorepby" path="res://assets/Menu/JUEGO GATOS.png" id="187_sfgva"]
 [ext_resource type="Texture2D" uid="uid://ctv65o8og4ipw" path="res://assets/SALON/SALÓN_0001s_0002s_0008_LIBROS-2.png" id="188_5p84s"]
+[ext_resource type="Texture2D" uid="uid://bc7d6uj0jykpd" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00097.png" id="188_yhh6f"]
+[ext_resource type="Texture2D" uid="uid://dei45qod1hb5e" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00098.png" id="189_g5n1j"]
 [ext_resource type="Texture2D" uid="uid://dtnetqsegnh06" path="res://assets/SALON/SALÓN_0001s_0001s_0000_COJIN.png" id="189_lni3g"]
+[ext_resource type="Texture2D" uid="uid://c780enudvsrvj" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00099.png" id="190_3xrc5"]
 [ext_resource type="Texture2D" uid="uid://dl54nsl5fja7l" path="res://assets/SALON/SALÓN_0001s_0003s_0002_PLANTA-2.png" id="190_h85fr"]
 [ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="191_i8tib"]
+[ext_resource type="Texture2D" uid="uid://mnay43os655d" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00100.png" id="191_xjvru"]
+[ext_resource type="Texture2D" uid="uid://6ysak3vabcw2" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00101.png" id="192_00pqp"]
 [ext_resource type="AudioStream" uid="uid://cr0kso0o13u05" path="res://assets/sonido/piano.mp3" id="192_o2kk4"]
+[ext_resource type="Texture2D" uid="uid://r65fcvw7vbk0" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00102.png" id="193_x1njy"]
+[ext_resource type="Texture2D" uid="uid://by3ch2mmlanda" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00103.png" id="194_up1a2"]
+[ext_resource type="Texture2D" uid="uid://c7hp8k5el7v46" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00104.png" id="195_lj5qy"]
+[ext_resource type="Texture2D" uid="uid://b0paa3643annn" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00105.png" id="196_lw7st"]
+[ext_resource type="Texture2D" uid="uid://bt35cjaa8lh2e" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00106.png" id="197_qeftx"]
+[ext_resource type="Texture2D" uid="uid://bem326ri4wbtc" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00107.png" id="198_s04cc"]
+[ext_resource type="Texture2D" uid="uid://cprgg2udxvkag" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00108.png" id="199_ybr6k"]
+[ext_resource type="Texture2D" uid="uid://cqlvhfe4njrw7" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00109.png" id="200_a3w5t"]
+[ext_resource type="Texture2D" uid="uid://de2n6b1w8ujs" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00110.png" id="201_hddfw"]
+[ext_resource type="Texture2D" uid="uid://2olcqoq5boey" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00111.png" id="202_dqcwo"]
+[ext_resource type="Texture2D" uid="uid://dk2l8y01g7br6" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00000.png" id="203_hu1hd"]
+[ext_resource type="Texture2D" uid="uid://dyq5l3xgxstgd" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00001.png" id="204_xcsg2"]
+[ext_resource type="Texture2D" uid="uid://b2cdcwpgb08au" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00002.png" id="205_omtwg"]
+[ext_resource type="Texture2D" uid="uid://o0rlkbu83sw0" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00003.png" id="206_sua8d"]
+[ext_resource type="Texture2D" uid="uid://ci6o2l4h0fec3" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00004.png" id="207_xmek4"]
+[ext_resource type="Texture2D" uid="uid://dv5aw22otvtr1" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00005.png" id="208_88bps"]
+[ext_resource type="Texture2D" uid="uid://c22vgg8xkmo7t" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00006.png" id="209_ehlyf"]
+[ext_resource type="Texture2D" uid="uid://bcf7s1pydunw4" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00007.png" id="210_hfx7b"]
+[ext_resource type="Texture2D" uid="uid://bt77k7s350gh2" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00008.png" id="211_8oyat"]
+[ext_resource type="Texture2D" uid="uid://ddqtbogyklodp" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00009.png" id="212_p04u4"]
+[ext_resource type="Texture2D" uid="uid://ve6vhifecihy" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00010.png" id="213_m3t45"]
+[ext_resource type="Texture2D" uid="uid://da7q412v8ltk4" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00011.png" id="214_c4k86"]
+[ext_resource type="Texture2D" uid="uid://2bgio6t8gjkv" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00012.png" id="215_visp1"]
+[ext_resource type="Texture2D" uid="uid://dkjgkx40bxvkm" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00013.png" id="216_8qvc5"]
+[ext_resource type="Texture2D" uid="uid://banhs2ygg6dxr" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00014.png" id="217_m2no6"]
+[ext_resource type="Texture2D" uid="uid://bqwh6dbv566x1" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00015.png" id="218_ljja1"]
+[ext_resource type="Texture2D" uid="uid://bycvi7hpned6v" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00016.png" id="219_2hp17"]
+[ext_resource type="Texture2D" uid="uid://bhu5i5ay3rvd" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00017.png" id="220_fde7e"]
+[ext_resource type="Texture2D" uid="uid://dbbc05t888lnh" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00018.png" id="221_aer7u"]
+[ext_resource type="Texture2D" uid="uid://b2pncbjw2a06k" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00019.png" id="222_welbr"]
+[ext_resource type="Texture2D" uid="uid://bvw47h4yl3mfd" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00020.png" id="223_tm4br"]
+[ext_resource type="Texture2D" uid="uid://dr3uo3na0xy71" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00021.png" id="224_l560l"]
+[ext_resource type="Texture2D" uid="uid://didbxiustwpe4" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00022.png" id="225_lip1q"]
+[ext_resource type="Texture2D" uid="uid://fo2jnp6vabg6" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00023.png" id="226_rehog"]
+[ext_resource type="Texture2D" uid="uid://cvjuh4lwt32dt" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00024.png" id="227_2f8wj"]
+[ext_resource type="Texture2D" uid="uid://cc4w7qby3rl4o" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00025.png" id="228_va1cg"]
+[ext_resource type="Texture2D" uid="uid://ch7b1mpqc4ud6" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00026.png" id="229_7j8w8"]
+[ext_resource type="Texture2D" uid="uid://53ahu56udrwj" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00027.png" id="230_tgjs3"]
+[ext_resource type="Texture2D" uid="uid://daniv71bhaiok" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00028.png" id="231_mi88u"]
+[ext_resource type="Texture2D" uid="uid://ck2okoah8hshg" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00029.png" id="232_cdk2f"]
+[ext_resource type="Texture2D" uid="uid://k8nxx8jy756t" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00030.png" id="233_i08a4"]
+[ext_resource type="Texture2D" uid="uid://bic254cbau25x" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00031.png" id="234_0a2ak"]
+[ext_resource type="Texture2D" uid="uid://c1qccqel3lu03" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00032.png" id="235_xbi6s"]
+[ext_resource type="Texture2D" uid="uid://buxhwv4qwf2lp" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00033.png" id="236_fyy3a"]
+[ext_resource type="Texture2D" uid="uid://mwaugfb6em7e" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00034.png" id="237_2wqnu"]
+[ext_resource type="Texture2D" uid="uid://cknm8esnaaqbs" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00035.png" id="238_a8lw3"]
+[ext_resource type="Texture2D" uid="uid://6vbbk8hlsf3s" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00036.png" id="239_5jy4x"]
+[ext_resource type="Texture2D" uid="uid://fi7saux3qqsg" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00037.png" id="240_ccloo"]
+[ext_resource type="Texture2D" uid="uid://tx80omx37cc4" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00038.png" id="241_mdbk6"]
+[ext_resource type="Texture2D" uid="uid://dqc1l74c0nl5k" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00039.png" id="242_0sp67"]
+[ext_resource type="Texture2D" uid="uid://mjmslq162h2q" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00040.png" id="243_n00d5"]
+[ext_resource type="Texture2D" uid="uid://d0uav17e2vkmk" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00041.png" id="244_k6i4w"]
+[ext_resource type="Texture2D" uid="uid://6wrgh3a426hd" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00042.png" id="245_bs81d"]
+[ext_resource type="Texture2D" uid="uid://dxkoc1qfyavmo" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00043.png" id="246_s86p2"]
+[ext_resource type="Texture2D" uid="uid://cwy1u0ltotqjp" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00044.png" id="247_8i86y"]
+[ext_resource type="Texture2D" uid="uid://mt81ebpaul1a" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00045.png" id="248_50xuq"]
+[ext_resource type="Texture2D" uid="uid://1a2c6xn1w53y" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00046.png" id="249_x8e8t"]
+[ext_resource type="Texture2D" uid="uid://calqrun5rayig" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00047.png" id="250_a8xdc"]
+[ext_resource type="Texture2D" uid="uid://bhyvmmlns70e6" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00048.png" id="251_u1bpv"]
+[ext_resource type="Texture2D" uid="uid://deqdkfv1510co" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00049.png" id="252_j2kcf"]
+[ext_resource type="Texture2D" uid="uid://b24mak13wj1b3" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00050.png" id="253_57ior"]
+[ext_resource type="Texture2D" uid="uid://cjvmec8aj00xl" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00051.png" id="254_2p5x0"]
+[ext_resource type="Texture2D" uid="uid://4o20nj26t5fk" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00052.png" id="255_712bv"]
+[ext_resource type="Texture2D" uid="uid://c7hb4a6r4gohy" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00053.png" id="256_lmvie"]
+[ext_resource type="Texture2D" uid="uid://mbcfars0821v" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00054.png" id="257_mccdr"]
+[ext_resource type="Texture2D" uid="uid://cdeqmf0fplkb1" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00055.png" id="258_fb14x"]
+[ext_resource type="Texture2D" uid="uid://csqtdjbjuo1fo" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00056.png" id="259_mcftn"]
+[ext_resource type="Texture2D" uid="uid://n0rtekv5fkyw" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00057.png" id="260_0q53n"]
+[ext_resource type="Texture2D" uid="uid://bxevfee3sbq2q" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00058.png" id="261_i4bq1"]
+[ext_resource type="Texture2D" uid="uid://b5t3npstb1yqo" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00059.png" id="262_1b012"]
+[ext_resource type="Texture2D" uid="uid://bppwldp2lsjjx" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00060.png" id="263_dimgd"]
+[ext_resource type="Texture2D" uid="uid://dw7j4unkgcptg" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00061.png" id="264_hv4dg"]
+[ext_resource type="Texture2D" uid="uid://48cwwqw007in" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00062.png" id="265_g5w7e"]
+[ext_resource type="Texture2D" uid="uid://bld2md3aa4ptr" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00063.png" id="266_ymmow"]
+[ext_resource type="Texture2D" uid="uid://dde1pdnpfk3np" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00064.png" id="267_e5kmv"]
+[ext_resource type="Texture2D" uid="uid://bgfofjnifgbdk" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00065.png" id="268_7lntj"]
+[ext_resource type="Texture2D" uid="uid://j6xi0ytvapwh" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00066.png" id="269_07rcv"]
+[ext_resource type="Texture2D" uid="uid://dacevjb7nqkq5" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00067.png" id="270_w0ioa"]
+[ext_resource type="Texture2D" uid="uid://41ekpcig0wn4" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00068.png" id="271_2nedp"]
+[ext_resource type="Texture2D" uid="uid://b28fdajsot5ve" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00069.png" id="272_nkvtf"]
+[ext_resource type="Texture2D" uid="uid://bgjqg5xlp88uk" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00070.png" id="273_syhbu"]
+[ext_resource type="Texture2D" uid="uid://oph4rmv3n18y" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00071.png" id="274_ssyax"]
+[ext_resource type="Texture2D" uid="uid://rs0fawkwnh3" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00072.png" id="275_mrdui"]
+[ext_resource type="Texture2D" uid="uid://dnyc50pxhrdur" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00073.png" id="276_1uo0q"]
+[ext_resource type="Texture2D" uid="uid://blx276hsyu0fs" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00074.png" id="277_mhgui"]
+[ext_resource type="Texture2D" uid="uid://kj4f1j8527dn" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00075.png" id="278_582fn"]
+[ext_resource type="Texture2D" uid="uid://fmmceyapnein" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00076.png" id="279_fym0a"]
+[ext_resource type="Texture2D" uid="uid://bl4st7p5v00ed" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00077.png" id="280_n3fgr"]
+[ext_resource type="Texture2D" uid="uid://2gvnniclrjeq" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00078.png" id="281_stcea"]
+[ext_resource type="Texture2D" uid="uid://ddpmkyuknbmpw" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00079.png" id="282_bfwng"]
+[ext_resource type="Texture2D" uid="uid://jugm06c4yxy4" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00080.png" id="283_rei2s"]
+[ext_resource type="Texture2D" uid="uid://b4ptnx6oa720w" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00081.png" id="284_cbvoc"]
+[ext_resource type="Texture2D" uid="uid://ds5xfjsvdti53" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00082.png" id="285_tn2th"]
+[ext_resource type="Texture2D" uid="uid://b26g7iiq5pxnj" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00083.png" id="286_748ho"]
+[ext_resource type="Texture2D" uid="uid://cawx1wb8woibb" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00084.png" id="287_utpu0"]
+[ext_resource type="Texture2D" uid="uid://d4b8v8xo5vxda" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00085.png" id="288_x30vp"]
+[ext_resource type="Texture2D" uid="uid://fvfu1y0k4pae" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00086.png" id="289_387dm"]
+[ext_resource type="Texture2D" uid="uid://bcv2w5e63i5ts" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00087.png" id="290_as5gg"]
+[ext_resource type="Texture2D" uid="uid://c75u3unuesqhm" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00088.png" id="291_i3ujd"]
+[ext_resource type="Texture2D" uid="uid://dmo7l6mrgmvw6" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00089.png" id="292_ulrck"]
+[ext_resource type="Texture2D" uid="uid://de3ex8rn1ube0" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00090.png" id="293_2y5kg"]
+[ext_resource type="Texture2D" uid="uid://d2mcvao83bcfv" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00091.png" id="294_jt0ls"]
+[ext_resource type="Texture2D" uid="uid://cu7x3oah3k34c" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00092.png" id="295_mrmek"]
+[ext_resource type="Texture2D" uid="uid://dxslhhjhkdnkr" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00093.png" id="296_qhmw5"]
+[ext_resource type="Texture2D" uid="uid://m1tapbthsmnl" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00094.png" id="297_mbrkl"]
+[ext_resource type="Texture2D" uid="uid://w0w3v77w0lwf" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00095.png" id="298_dbfdm"]
+[ext_resource type="Texture2D" uid="uid://dyu78sevbp7a3" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00096.png" id="299_mubav"]
+[ext_resource type="Texture2D" uid="uid://pohew1fdmepe" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00097.png" id="300_1ipj4"]
+[ext_resource type="Texture2D" uid="uid://bt1pu7ipd4fr7" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00098.png" id="301_c0mm2"]
+[ext_resource type="Texture2D" uid="uid://53lbk2j53jkj" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00099.png" id="302_mi3po"]
+[ext_resource type="Texture2D" uid="uid://cehgrkec01ukt" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00100.png" id="303_hyn6v"]
+[ext_resource type="Texture2D" uid="uid://cl6thnvog38l8" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00101.png" id="304_ucmdb"]
+[ext_resource type="Texture2D" uid="uid://bgc2p5r8kpuj2" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00102.png" id="305_wfjcx"]
+[ext_resource type="Texture2D" uid="uid://cm88awwdwfiu" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00103.png" id="306_p033h"]
+[ext_resource type="Texture2D" uid="uid://dkqg24tk02wnf" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00104.png" id="307_iv6bm"]
+[ext_resource type="Texture2D" uid="uid://bumjw2h2flt8j" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00105.png" id="308_6tlj8"]
+[ext_resource type="Texture2D" uid="uid://bkkb75va0jy33" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00106.png" id="309_3gf70"]
+[ext_resource type="Texture2D" uid="uid://457iatr7bbuk" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00107.png" id="310_lijfe"]
+[ext_resource type="Texture2D" uid="uid://bt68yjkcs1yu7" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00108.png" id="311_xe83e"]
+[ext_resource type="Texture2D" uid="uid://c5ccuk48c6vxk" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00109.png" id="312_svar0"]
+[ext_resource type="Texture2D" uid="uid://vvbri616buxf" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00110.png" id="313_umikq"]
+[ext_resource type="Texture2D" uid="uid://cqa325hsl12m1" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00111.png" id="314_el4d5"]
+[ext_resource type="Texture2D" uid="uid://c6mwyskb15457" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00112.png" id="315_w44x3"]
+[ext_resource type="Texture2D" uid="uid://ba0iek0c23gj6" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00113.png" id="316_on2e0"]
+[ext_resource type="Texture2D" uid="uid://btqm2x6suuohg" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00114.png" id="317_73b8r"]
+[ext_resource type="Texture2D" uid="uid://bf27m8uvdng1e" path="res://animaciones/GatosAnimation/GATO6/GATO6/GATO6_00115.png" id="318_r7mdm"]
+[ext_resource type="Texture2D" uid="uid://by2r8q8sudc7s" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00035.png" id="319_y2d7w"]
+[ext_resource type="Texture2D" uid="uid://ceuj3ku1diuvk" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00036.png" id="320_46oii"]
+[ext_resource type="Texture2D" uid="uid://d2rp3qtp8qsnk" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00037.png" id="321_7gvj7"]
+[ext_resource type="Texture2D" uid="uid://smh2yic47oo0" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00038.png" id="322_atiwx"]
+[ext_resource type="Texture2D" uid="uid://boig0b8sps8xv" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00039.png" id="323_l87nn"]
+[ext_resource type="Texture2D" uid="uid://brf1uh2nvpgd4" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00040.png" id="324_n8drl"]
+[ext_resource type="Texture2D" uid="uid://dd30cir2rtd2a" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00041.png" id="325_p76ox"]
+[ext_resource type="Texture2D" uid="uid://bbgv3kcoqfdro" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00042.png" id="326_c06uw"]
+[ext_resource type="Texture2D" uid="uid://c01eddl36mggm" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00043.png" id="327_mjp66"]
+[ext_resource type="Texture2D" uid="uid://dbe2cm6mlyfuw" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00044.png" id="328_a5xhi"]
+[ext_resource type="Texture2D" uid="uid://c6r51ixi3ai36" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00045.png" id="329_22x6q"]
+[ext_resource type="Texture2D" uid="uid://bsl2ims3kiasv" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00046.png" id="330_iauti"]
+[ext_resource type="Texture2D" uid="uid://4bsgys6lgwqe" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00047.png" id="331_mtxlt"]
+[ext_resource type="Texture2D" uid="uid://hwo6qu8vs0dm" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00048.png" id="332_jqyvb"]
+[ext_resource type="Texture2D" uid="uid://tir04sq10n" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00049.png" id="333_c5ifx"]
+[ext_resource type="Texture2D" uid="uid://cebvpqssgoxys" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00050.png" id="334_ik8a1"]
+[ext_resource type="Texture2D" uid="uid://ds6nl604mpf5p" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00051.png" id="335_0nnep"]
+[ext_resource type="Texture2D" uid="uid://ycudialh63su" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00052.png" id="336_4dvuv"]
+[ext_resource type="Texture2D" uid="uid://gkq5fxm1wnwe" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00053.png" id="337_uypk0"]
+[ext_resource type="Texture2D" uid="uid://dddse34bbc7lw" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00054.png" id="338_mqph2"]
+[ext_resource type="Texture2D" uid="uid://b40vridovvbfv" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00055.png" id="339_gkddw"]
+[ext_resource type="Texture2D" uid="uid://bqmcaj7ps31p8" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00056.png" id="340_bvlqj"]
+[ext_resource type="Texture2D" uid="uid://q31pcan1ktod" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00057.png" id="341_0rue6"]
+[ext_resource type="Texture2D" uid="uid://ceucrhvl4qcpy" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00058.png" id="342_mxbxc"]
+[ext_resource type="Texture2D" uid="uid://glsh83kqjhe7" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00059.png" id="343_eieyw"]
+[ext_resource type="Texture2D" uid="uid://trrqclkdp10a" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00060.png" id="344_rfs2r"]
+[ext_resource type="Texture2D" uid="uid://d3fj3hubrwaba" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00061.png" id="345_5ig5g"]
+[ext_resource type="Texture2D" uid="uid://domveb1vqugw" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00062.png" id="346_s4hj8"]
+[ext_resource type="Texture2D" uid="uid://cfq64kjltphhd" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00063.png" id="347_n2wqs"]
+[ext_resource type="Texture2D" uid="uid://dn2645881fjij" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00064.png" id="348_1utqg"]
+[ext_resource type="Texture2D" uid="uid://bk5xt34enfeno" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00065.png" id="349_w1j1y"]
+[ext_resource type="Texture2D" uid="uid://bquubtnynxv0y" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00066.png" id="350_qgumk"]
+[ext_resource type="Texture2D" uid="uid://cqrxhxx67b4ro" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00067.png" id="351_7e8le"]
+[ext_resource type="Texture2D" uid="uid://cw05b3u0b175a" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00068.png" id="352_4ffmc"]
+[ext_resource type="Texture2D" uid="uid://lbvao6106gep" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00069.png" id="353_18uw7"]
+[ext_resource type="Texture2D" uid="uid://ddx0brniwwtm6" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00070.png" id="354_1uli4"]
+[ext_resource type="Texture2D" uid="uid://c16truyorwxvu" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00071.png" id="355_d1wjg"]
+[ext_resource type="Texture2D" uid="uid://dx1e5ml5ev6oy" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00072.png" id="356_l7c76"]
+[ext_resource type="Texture2D" uid="uid://b4cklft7nkcnv" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00073.png" id="357_dwxt5"]
+[ext_resource type="Texture2D" uid="uid://ckwrbn3bkg34f" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00074.png" id="358_cojts"]
+[ext_resource type="Texture2D" uid="uid://c3eauhoqobubx" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00075.png" id="359_2hi06"]
+[ext_resource type="Texture2D" uid="uid://dhjhwckcmkrrq" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00076.png" id="360_57wyc"]
+[ext_resource type="Texture2D" uid="uid://ccnahybiy27k0" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00077.png" id="361_qqynk"]
+[ext_resource type="Texture2D" uid="uid://bawmrv8nv0mjf" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00078.png" id="362_yjp7u"]
+[ext_resource type="Texture2D" uid="uid://bo0x3a2x527n4" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00079.png" id="363_aho31"]
+[ext_resource type="Texture2D" uid="uid://dvmy5fjenitgc" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00080.png" id="364_uibv1"]
+[ext_resource type="Texture2D" uid="uid://cxy2mymep2hxg" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00081.png" id="365_oeejl"]
+[ext_resource type="Texture2D" uid="uid://dwvpgymdvenuq" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00082.png" id="366_3vv8u"]
+[ext_resource type="Texture2D" uid="uid://jyb2b5uvfgm1" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00083.png" id="367_vttta"]
+[ext_resource type="Texture2D" uid="uid://y70qdlvb3urr" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00084.png" id="368_mf0hw"]
+[ext_resource type="Texture2D" uid="uid://fy2maklfr2v8" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00085.png" id="369_ctr06"]
+[ext_resource type="Texture2D" uid="uid://n287q5ptvn2b" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00086.png" id="370_l1ljh"]
+[ext_resource type="Texture2D" uid="uid://riep0motcile" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00087.png" id="371_dd8mx"]
+[ext_resource type="Texture2D" uid="uid://c60lrsgw5vhoy" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00088.png" id="372_1um4f"]
+[ext_resource type="Texture2D" uid="uid://b4dgeea3vd1d8" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00089.png" id="373_n7mmi"]
+[ext_resource type="Texture2D" uid="uid://bwh4fprieo4cc" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00090.png" id="374_0ygjo"]
+[ext_resource type="Texture2D" uid="uid://dbgxlyeivwekq" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00091.png" id="375_t83p5"]
+[ext_resource type="Texture2D" uid="uid://creobcrrxrwck" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00092.png" id="376_jp0lo"]
+[ext_resource type="Texture2D" uid="uid://di55lhvbi7wgr" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00093.png" id="377_oiu8c"]
+[ext_resource type="Texture2D" uid="uid://dc2gaoaaxaees" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00094.png" id="378_7r5d3"]
+[ext_resource type="Texture2D" uid="uid://wmr7nrcfd13p" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00095.png" id="379_8m4ul"]
+[ext_resource type="Texture2D" uid="uid://bim1520o326m2" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00096.png" id="380_g75ce"]
+[ext_resource type="Texture2D" uid="uid://u0i1dyrs8dw7" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00097.png" id="381_66xif"]
+[ext_resource type="Texture2D" uid="uid://bngwvw6wcwwpr" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00098.png" id="382_0nt3r"]
+[ext_resource type="Texture2D" uid="uid://c21f7y552cnjy" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00099.png" id="383_cs08r"]
+[ext_resource type="Texture2D" uid="uid://b1m1j81mij1pn" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00100.png" id="384_e2gnv"]
+[ext_resource type="Texture2D" uid="uid://ddbyophqbmyfv" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00101.png" id="385_m34pq"]
+[ext_resource type="Texture2D" uid="uid://cx0er83lyg2a8" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00102.png" id="386_g5ffe"]
+[ext_resource type="Texture2D" uid="uid://00wlgx057xsx" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00103.png" id="387_d5j2u"]
+[ext_resource type="Texture2D" uid="uid://bk2oval3vb2hh" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00104.png" id="388_kwqrk"]
+[ext_resource type="Texture2D" uid="uid://cym5n3x8s1j1" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00105.png" id="389_w7sm2"]
+[ext_resource type="Texture2D" uid="uid://imovvk66d4cf" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00106.png" id="390_ld83f"]
+[ext_resource type="Texture2D" uid="uid://dwsn01ym8rfsw" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00107.png" id="391_lyr81"]
+[ext_resource type="Texture2D" uid="uid://cel3rdb28aoks" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00108.png" id="392_dkg2e"]
+[ext_resource type="Texture2D" uid="uid://bsqrg37yp21tr" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00109.png" id="393_eu82m"]
+[ext_resource type="Texture2D" uid="uid://bft4r0plgenns" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00110.png" id="394_jxijw"]
+[ext_resource type="Texture2D" uid="uid://6lfjiuuax4bi" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00111.png" id="395_5f3pi"]
+[ext_resource type="Texture2D" uid="uid://dglrn0lajxujn" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00112.png" id="396_urjel"]
+[ext_resource type="Texture2D" uid="uid://daisrgu4v0wje" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00113.png" id="397_xtdij"]
+[ext_resource type="Texture2D" uid="uid://blged10ss5yne" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00114.png" id="398_r4nu1"]
+[ext_resource type="Texture2D" uid="uid://cpo87caqedihw" path="res://animaciones/GatosAnimation/GATO6/loop/GATO6/GATO6_LOOP00115.png" id="399_4cil4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s1dne"]
+radius = 81.9269
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y6p6q"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_huf8k")
+"texture": ExtResource("65_uc5ri")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_ukhxl")
+"texture": ExtResource("66_j27yy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_4gb0c")
+"texture": ExtResource("67_vyftn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_dq831")
+"texture": ExtResource("68_hvfuc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_876kf")
+"texture": ExtResource("69_m0jti")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_6w538")
+"texture": ExtResource("70_0v4ky")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_0t2rm")
+"texture": ExtResource("71_o0upy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_cj22d")
+"texture": ExtResource("72_vqcur")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_5fthi")
+"texture": ExtResource("73_2faq0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_rq5ii")
+"texture": ExtResource("74_gu53b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_pv8r5")
+"texture": ExtResource("75_uvxlj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_q2y67")
+"texture": ExtResource("76_e01oi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_dd5u4")
+"texture": ExtResource("77_0g37q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_6ncbp")
+"texture": ExtResource("78_vxrc4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_pofu4")
+"texture": ExtResource("79_o577q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_185id")
+"texture": ExtResource("80_ociai")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_d1eb6")
+"texture": ExtResource("81_7mqq1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_u63p5")
+"texture": ExtResource("82_gh27a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_yqsvd")
+"texture": ExtResource("83_gwxn3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_76awr")
+"texture": ExtResource("84_6tg33")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_fnaai")
+"texture": ExtResource("85_4rnad")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_2rltr")
+"texture": ExtResource("86_63sj4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_27kpb")
+"texture": ExtResource("87_kpoo5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_ajt0n")
+"texture": ExtResource("88_4vj6m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_e5k57")
+"texture": ExtResource("89_ljfoy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_l5rdo")
+"texture": ExtResource("90_vkq8u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_sp3os")
+"texture": ExtResource("91_3i0bd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_xxblj")
+"texture": ExtResource("92_vecrg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_4fof1")
+"texture": ExtResource("93_ue31d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_j26xg")
+"texture": ExtResource("94_gryhw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_rws7e")
+"texture": ExtResource("95_ko6d8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_wm78u")
+"texture": ExtResource("96_s21l7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_ppmas")
+"texture": ExtResource("97_0jl5h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_iiema")
+"texture": ExtResource("98_xf6u7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_u36c1")
+"texture": ExtResource("99_1h53m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_kv3kj")
+"texture": ExtResource("100_wvqxo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_kqsl8")
+"texture": ExtResource("101_xsth5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_tv6x1")
+"texture": ExtResource("102_if1k7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_josyr")
+"texture": ExtResource("103_37e5p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_0hq8q")
+"texture": ExtResource("104_ggbm0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_1l3lp")
+"texture": ExtResource("105_o8fpa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_dg0eb")
+"texture": ExtResource("106_6e1mn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_y5tor")
+"texture": ExtResource("107_62u25")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_ubbcn")
+"texture": ExtResource("108_f33bs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_07mqq")
+"texture": ExtResource("109_xngdq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_ge8br")
+"texture": ExtResource("110_fl32a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_rj5cy")
+"texture": ExtResource("111_0n7r3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_wgedf")
+"texture": ExtResource("112_3rwrs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_5bw33")
+"texture": ExtResource("113_rqh1u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_dqdgh")
+"texture": ExtResource("114_j75m2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_g0oe0")
+"texture": ExtResource("115_dwgu1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_47q5o")
+"texture": ExtResource("116_oohen")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_x3uth")
+"texture": ExtResource("117_jg4s7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_e8xs4")
+"texture": ExtResource("118_o0c0c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("56_nt7jv")
+"texture": ExtResource("119_rnmt1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_7244c")
+"texture": ExtResource("120_0ky0d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_x70c0")
+"texture": ExtResource("121_31oqr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_67i3p")
+"texture": ExtResource("122_7l02w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_cb7pq")
+"texture": ExtResource("123_dmlxe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_isib6")
+"texture": ExtResource("124_ee0wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_a421y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_47q0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_4a5dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_nawwj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_jp0fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_jawo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_c5xu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_crg7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_ug6mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_e6w41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_jjtyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_v2g5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_jx722")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_sb815")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_ifyvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_2b2w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_dmtlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_hpqlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_8t4yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_tfpgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_s8pbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_22f30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_wjc1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_86pbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_lusyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_3hpqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_fpocj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_mr4hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_tqhvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_ut1ts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_5gmyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_yk3rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_6ereg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_4pk2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_1y2no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_6ngnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_0jy8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_btxmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_5ks0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_25rdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_1xbgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_j41r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_5jddr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_luc5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_ltvay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_i57oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_2haa2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_0wwvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_b2s66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_hrsnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_3nnfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_n4mws")
+}],
+"loop": false,
+"name": &"gato9 cojin accion",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("118_pywfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_45wxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_8rv1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_qxmmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_x7xcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_1rvsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_7naa0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_dv5co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_ry26c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_ctui7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_4j82f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_fmyfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_37ed6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_ldxk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_5sf2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_pm48g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_oda3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_s0mar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_am32h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_obhxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_rruce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_dyebj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_wmqml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_h2gp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_2gubh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_mu4ge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_rcyft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_063kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_780jk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_f7k4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_e3lwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_kawwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_385jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_mltop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_hp0vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_v465b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_12n2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_mb1xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_dikmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_ayovj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_pfhco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_3mekr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_3w8to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_wd6v4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_tawbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_nm5ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_ym4nf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_w2pfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_kil6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_qckb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_ehc2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_2qii0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_pm28e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_mt4qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_f51sg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_akpg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_c2kko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_uuf0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_6jfje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_1djj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_hctes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_dmvl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_ca3sv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_rn44y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_b66x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_378l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_nms2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_mgicm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_jdh2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_0vsjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_yhh6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_g5n1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_3xrc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_xjvru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_00pqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_x1njy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_up1a2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_lj5qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_lw7st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_qeftx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_s04cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_ybr6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_a3w5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_hddfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_dqcwo")
 }],
 "loop": true,
-"name": &"gato 4",
-"speed": 24.0
+"name": &"gato9 cojin idol",
+"speed": 30.0
 }]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_s1dne"]
-radius = 81.9269
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4xa3c"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("62_ce1l8")
+"texture": ExtResource("203_hu1hd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_152l8")
+"texture": ExtResource("204_xcsg2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_rjh51")
+"texture": ExtResource("205_omtwg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_iwx77")
+"texture": ExtResource("206_sua8d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("66_pms3e")
+"texture": ExtResource("207_xmek4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_dgmjt")
+"texture": ExtResource("208_88bps")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_283lp")
+"texture": ExtResource("209_ehlyf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_kc8cd")
+"texture": ExtResource("210_hfx7b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_k0xty")
+"texture": ExtResource("211_8oyat")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_djlp0")
+"texture": ExtResource("212_p04u4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_0x3y4")
+"texture": ExtResource("213_m3t45")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_qmgum")
+"texture": ExtResource("214_c4k86")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_sm6f2")
+"texture": ExtResource("215_visp1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_u3vv3")
+"texture": ExtResource("216_8qvc5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("76_baqu5")
+"texture": ExtResource("217_m2no6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("77_65i3n")
+"texture": ExtResource("218_ljja1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("78_6d0hd")
+"texture": ExtResource("219_2hp17")
 }, {
 "duration": 1.0,
-"texture": ExtResource("79_0qn6v")
+"texture": ExtResource("220_fde7e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("80_wdsmw")
+"texture": ExtResource("221_aer7u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("81_c5yvi")
+"texture": ExtResource("222_welbr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("82_bgyqd")
+"texture": ExtResource("223_tm4br")
 }, {
 "duration": 1.0,
-"texture": ExtResource("83_bmbxk")
+"texture": ExtResource("224_l560l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("84_xja03")
+"texture": ExtResource("225_lip1q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("85_c6m2h")
+"texture": ExtResource("226_rehog")
 }, {
 "duration": 1.0,
-"texture": ExtResource("86_tv75a")
+"texture": ExtResource("227_2f8wj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("87_6jjmw")
+"texture": ExtResource("228_va1cg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("88_i10mp")
+"texture": ExtResource("229_7j8w8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("89_aj8uu")
+"texture": ExtResource("230_tgjs3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("90_mmppp")
+"texture": ExtResource("231_mi88u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("91_ye3es")
+"texture": ExtResource("232_cdk2f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("92_37fqg")
+"texture": ExtResource("233_i08a4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("93_ccgkk")
+"texture": ExtResource("234_0a2ak")
 }, {
 "duration": 1.0,
-"texture": ExtResource("94_m2lqo")
+"texture": ExtResource("235_xbi6s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("95_b8qe3")
+"texture": ExtResource("236_fyy3a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("96_pxnrn")
+"texture": ExtResource("237_2wqnu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("97_8ekh5")
+"texture": ExtResource("238_a8lw3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("98_qxmur")
+"texture": ExtResource("239_5jy4x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("99_u8ex2")
+"texture": ExtResource("240_ccloo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("100_d64rc")
+"texture": ExtResource("241_mdbk6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("101_vvp06")
+"texture": ExtResource("242_0sp67")
 }, {
 "duration": 1.0,
-"texture": ExtResource("102_qvd0j")
+"texture": ExtResource("243_n00d5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("103_2at4w")
+"texture": ExtResource("244_k6i4w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("104_5tmp3")
+"texture": ExtResource("245_bs81d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("105_sqqjp")
+"texture": ExtResource("246_s86p2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("106_80xux")
+"texture": ExtResource("247_8i86y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("107_mee6f")
+"texture": ExtResource("248_50xuq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("108_aei0a")
+"texture": ExtResource("249_x8e8t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("109_jbor1")
+"texture": ExtResource("250_a8xdc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("110_k81u1")
+"texture": ExtResource("251_u1bpv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("111_m4skt")
+"texture": ExtResource("252_j2kcf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("112_4psfq")
+"texture": ExtResource("253_57ior")
 }, {
 "duration": 1.0,
-"texture": ExtResource("113_gsljd")
+"texture": ExtResource("254_2p5x0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("114_b54gi")
+"texture": ExtResource("255_712bv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("115_n60uh")
+"texture": ExtResource("256_lmvie")
 }, {
 "duration": 1.0,
-"texture": ExtResource("116_ce5jk")
+"texture": ExtResource("257_mccdr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("117_8bht0")
+"texture": ExtResource("258_fb14x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("118_o7ei8")
+"texture": ExtResource("259_mcftn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("119_dq8uw")
+"texture": ExtResource("260_0q53n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("120_25tdg")
+"texture": ExtResource("261_i4bq1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("121_rlbjm")
+"texture": ExtResource("262_1b012")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_dimgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_hv4dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_g5w7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_ymmow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_e5kmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_7lntj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_07rcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_w0ioa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_2nedp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_nkvtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_syhbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_ssyax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_mrdui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_1uo0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_mhgui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("278_582fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_fym0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_n3fgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_stcea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_bfwng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_rei2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_cbvoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_tn2th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_748ho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("287_utpu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_x30vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_387dm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_as5gg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_i3ujd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("292_ulrck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("293_2y5kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("294_jt0ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("295_mrmek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("296_qhmw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("297_mbrkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("298_dbfdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("299_mubav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("300_1ipj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("301_c0mm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("302_mi3po")
+}, {
+"duration": 1.0,
+"texture": ExtResource("303_hyn6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("304_ucmdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("305_wfjcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("306_p033h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("307_iv6bm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("308_6tlj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("309_3gf70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("310_lijfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("311_xe83e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("312_svar0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("313_umikq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("314_el4d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("315_w44x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("316_on2e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("317_73b8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("318_r7mdm")
+}],
+"loop": false,
+"name": &"gato6 piano accion",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("319_y2d7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("320_46oii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("321_7gvj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("322_atiwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("323_l87nn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_n8drl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_p76ox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_c06uw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_mjp66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_a5xhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_22x6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("330_iauti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_mtxlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_jqyvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_c5ifx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_ik8a1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_0nnep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_4dvuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_uypk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_mqph2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_gkddw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_bvlqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_0rue6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_mxbxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_eieyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_rfs2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_5ig5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_s4hj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_n2wqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("348_1utqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("349_w1j1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("350_qgumk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("351_7e8le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("352_4ffmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("353_18uw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("354_1uli4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("355_d1wjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("356_l7c76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("357_dwxt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("358_cojts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("359_2hi06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("360_57wyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("361_qqynk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("362_yjp7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("363_aho31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("364_uibv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("365_oeejl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("366_3vv8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("367_vttta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("368_mf0hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("369_ctr06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("370_l1ljh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("371_dd8mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("372_1um4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("373_n7mmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("374_0ygjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("375_t83p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("376_jp0lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("377_oiu8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("378_7r5d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("379_8m4ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("380_g75ce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("381_66xif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("382_0nt3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("383_cs08r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("384_e2gnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("385_m34pq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("386_g5ffe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("387_d5j2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("388_kwqrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("389_w7sm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("390_ld83f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("391_lyr81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("392_dkg2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("393_eu82m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("394_jxijw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("395_5f3pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("396_urjel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("397_xtdij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("398_r4nu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("399_4cil4")
 }],
 "loop": true,
-"name": &"default",
-"speed": 24.0
+"name": &"gato6 piano idol",
+"speed": 30.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cthi"]
@@ -814,22 +1920,6 @@ position = Vector2(1093, 505)
 scale = Vector2(3.4, 3.4)
 texture = ExtResource("186_feayb")
 
-[node name="imggatocojin" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(1093, 396)
-scale = Vector2(0.076, 0.076)
-sprite_frames = SubResource("SpriteFrames_y6p6q")
-animation = &"gato 4"
-autoplay = "gato 4"
-
-[node name="gatocojin" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(786, 296)
-scale = Vector2(0.107536, 0.107536)
-sprite_frames = SubResource("SpriteFrames_y6p6q")
-animation = &"gato 4"
-autoplay = "gato 4"
-
 [node name="Cojin" type="Sprite2D" parent="."]
 position = Vector2(718, 373)
 scale = Vector2(0.525, 0.525)
@@ -841,25 +1931,33 @@ texture = ExtResource("189_lni3g")
 position = Vector2(5.71432, 5.62668e-05)
 shape = SubResource("CircleShape2D_s1dne")
 
-[node name="imggatopiano" type="AnimatedSprite2D" parent="."]
+[node name="gatocojin" type="AnimatedSprite2D" parent="."]
+position = Vector2(734, 326)
+scale = Vector2(0.53, 0.53)
+sprite_frames = SubResource("SpriteFrames_y6p6q")
+animation = &"gato9 cojin accion"
+
+[node name="gatocojinidol" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(1094, 66)
-scale = Vector2(0.07625, 0.07625)
-sprite_frames = SubResource("SpriteFrames_4xa3c")
-autoplay = "default"
+position = Vector2(734, 326)
+scale = Vector2(0.53, 0.53)
+sprite_frames = SubResource("SpriteFrames_y6p6q")
+animation = &"gato9 cojin idol"
+autoplay = "gato9 cojin idol"
 
 [node name="gatopiano" type="AnimatedSprite2D" parent="."]
-position = Vector2(254, 236)
-scale = Vector2(0.07625, 0.07625)
+position = Vector2(264, 226)
+scale = Vector2(0.53, 0.53)
 sprite_frames = SubResource("SpriteFrames_4xa3c")
-autoplay = "default"
+animation = &"gato6 piano accion"
 
 [node name="lestcatchgatopiano" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(192, 255)
-scale = Vector2(0.09, 0.09)
+position = Vector2(264, 226)
+scale = Vector2(0.53, 0.53)
 sprite_frames = SubResource("SpriteFrames_4xa3c")
-autoplay = "default"
+animation = &"gato6 piano idol"
+autoplay = "gato6 piano idol"
 
 [node name="Partitura" type="Sprite2D" parent="."]
 position = Vector2(286, 242)
@@ -877,20 +1975,20 @@ visible = false
 position = Vector2(1095, 507)
 scale = Vector2(0.07625, 0.07625)
 sprite_frames = SubResource("SpriteFrames_4xa3c")
-autoplay = "default"
+animation = &"gato6 piano accion"
 
 [node name="gatomatera" type="AnimatedSprite2D" parent="."]
 position = Vector2(987, 220)
 scale = Vector2(0.07625, 0.07625)
 sprite_frames = SubResource("SpriteFrames_4xa3c")
-autoplay = "default"
+animation = &"gato6 piano accion"
 
 [node name="lestcatchgatomatera" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(927, 222)
 scale = Vector2(0.07625, 0.07625)
 sprite_frames = SubResource("SpriteFrames_4xa3c")
-autoplay = "default"
+animation = &"gato6 piano accion"
 
 [node name="matera" type="Sprite2D" parent="."]
 position = Vector2(985, 187.381)
@@ -983,9 +2081,23 @@ stream = ExtResource("191_i8tib")
 stream = ExtResource("192_o2kk4")
 pitch_scale = 1.49
 
+[node name="imggatocojin" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1047, 416)
+scale = Vector2(0.4965, 0.4965)
+texture = ExtResource("194_up1a2")
+
+[node name="imggatopiano" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1151, 40)
+scale = Vector2(0.466, 0.466)
+texture = ExtResource("393_eu82m")
+
 [connection signal="input_event" from="Cojin/CojinArea2D" to="." method="_on_cojin_area_2d_input_event"]
 [connection signal="mouse_entered" from="Cojin/CojinArea2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="Cojin/CojinArea2D" to="." method="change_cursor_back"]
+[connection signal="animation_finished" from="gatocojin" to="." method="_on_gatocojin_animation_finished"]
+[connection signal="animation_finished" from="gatopiano" to="." method="_on_gatopiano_animation_finished"]
 [connection signal="input_event" from="Partitura/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Partitura/Area2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="Partitura/Area2D" to="." method="change_cursor_back"]

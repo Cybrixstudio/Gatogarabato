@@ -14,17 +14,14 @@ func _on_home_area_2d_input_event(viewport, event, shape_idx):
 
 func _on_cojin_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$gatocojin.visible = true
+		$gatocojin.play()
 		$imggatocojin.visible = true
-		$Cojin/CojinArea2D.visible = false
 		miaw.play()
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$lestcatchgatopiano.visible = true
 		$imggatopiano.visible = true
-		$gatopiano.visible = false
-		$Partitura/Area2D.visible = false
+		$gatopiano.play()
 		miaw.play()
 		piano.play()
 
@@ -51,3 +48,11 @@ func _on_libros_area_2d_input_event(viewport, event, shape_idx):
 		$gatolibros.visible = false
 		$Libros/librosArea2D.visible = false
 		miaw.play()
+		
+func _on_gatocojin_animation_finished():
+		$gatocojin.visible = false
+		$gatocojinidol.visible = true
+		
+func _on_gatopiano_animation_finished():
+		$gatopiano.visible = false
+		$lestcatchgatopiano.visible = true
