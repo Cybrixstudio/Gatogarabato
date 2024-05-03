@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cnqhvh6fulgs5"]
+[gd_scene load_steps=28 format=3 uid="uid://cnqhvh6fulgs5"]
 
 [ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
 [ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
@@ -18,6 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://dlvtegdnr0x2r" path="res://animaciones/GatosAnimation/GATO14/loop/GATO14/GATO14_LOOP00035.png" id="15_mkhse"]
 [ext_resource type="Texture2D" uid="uid://c3uupoduydc4o" path="res://gatosPNG/GATO_0011_4.png" id="17_0aygr"]
 [ext_resource type="Texture2D" uid="uid://crdug5hpfpdly" path="res://animaciones/GatosAnimation/GATO12/loop/GATO11/GATO11_LOOP00105.png" id="18_33jsi"]
+[ext_resource type="Texture2D" uid="uid://b0fnmxmj1vdhx" path="res://assets/ALCOBA/ALCOBA_0001s_0005s_0004_ZAPATO.png" id="19_m0vv5"]
+[ext_resource type="Texture2D" uid="uid://lwmgx3658yon" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0002_COJIN-1.png" id="20_braya"]
+[ext_resource type="Texture2D" uid="uid://dlayavrgj0kad" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0001_COJIN-2.png" id="21_yuu3f"]
+[ext_resource type="Texture2D" uid="uid://t2rru1bkuufr" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0000_COJIN-3.png" id="22_f0v1r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
 size = Vector2(141.304, 430.366)
@@ -32,7 +36,7 @@ size = Vector2(219.005, 617.54)
 size = Vector2(6256.64, 3592.93)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3qm3r"]
-size = Vector2(137, 110)
+size = Vector2(230.169, 122.297)
 
 [node name="LVl2Alcoba" type="Node2D"]
 script = ExtResource("1_1nbii")
@@ -104,11 +108,6 @@ scale = Vector2(0.41, 0.455)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato13 baul idol"
 autoplay = "gato13 baul idol"
-
-[node name="Cama" type="Sprite2D" parent="."]
-position = Vector2(711.55, 428)
-scale = Vector2(0.544379, 0.612245)
-texture = ExtResource("9_dtab0")
 
 [node name="GATO2" type="AnimatedSprite2D" parent="."]
 position = Vector2(280, 335)
@@ -209,6 +208,19 @@ position = Vector2(1076.63, 508.374)
 scale = Vector2(0.277497, 0.277497)
 texture = ExtResource("18_33jsi")
 
+[node name="Cama" type="Sprite2D" parent="."]
+position = Vector2(711.55, 428)
+scale = Vector2(0.544379, 0.612245)
+texture = ExtResource("9_dtab0")
+
+[node name="camaArea2D" type="Area2D" parent="Cama"]
+position = Vector2(-1307.09, -699.067)
+scale = Vector2(1.83696, 1.63333)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cama/camaArea2D"]
+position = Vector2(686, 551)
+shape = SubResource("RectangleShape2D_3qm3r")
+
 [node name="gatocama" type="AnimatedSprite2D" parent="."]
 position = Vector2(689, 537)
 scale = Vector2(0.601, 0.667)
@@ -223,31 +235,47 @@ sprite_frames = ExtResource("2_uq68j")
 animation = &"gato10 cama idol"
 autoplay = "gato10 cama idol"
 
-[node name="camaArea2D" type="Area2D" parent="."]
+[node name="zapato" type="Sprite2D" parent="."]
+position = Vector2(224.392, 567.5)
+scale = Vector2(0.531998, 0.58763)
+texture = ExtResource("19_m0vv5")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camaArea2D"]
-position = Vector2(686, 551)
+[node name="zapatoArea2D" type="Area2D" parent="zapato"]
+position = Vector2(-244, -552)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zapato/zapatoArea2D"]
+position = Vector2(246.78, 549.851)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3qm3r")
 
 [node name="gatozapato" type="AnimatedSprite2D" parent="."]
-position = Vector2(271, 515)
-scale = Vector2(0.601, 0.667)
+position = Vector2(267, 521)
+scale = Vector2(0.501, 0.556)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato11 zapato accion"
 
 [node name="gatozapatoidol" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(271, 515)
-scale = Vector2(0.601, 0.667)
+position = Vector2(267, 521)
+scale = Vector2(0.501, 0.556)
 sprite_frames = ExtResource("2_uq68j")
 animation = &"gato11 zapato idol"
 autoplay = "gato11 zapato idol"
 
-[node name="zapatoArea2D" type="Area2D" parent="."]
+[node name="Alcoba0001s0000s0002Cojin-1" type="Sprite2D" parent="."]
+position = Vector2(660, 338)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("20_braya")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="zapatoArea2D"]
-position = Vector2(223, 556)
-shape = SubResource("RectangleShape2D_3qm3r")
+[node name="Alcoba0001s0000s0001Cojin-2" type="Sprite2D" parent="."]
+position = Vector2(750.95, 337)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("21_yuu3f")
+
+[node name="Alcoba0001s0000s0000Cojin-3" type="Sprite2D" parent="."]
+position = Vector2(662, 357)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("22_f0v1r")
 
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]
@@ -262,7 +290,7 @@ shape = SubResource("RectangleShape2D_3qm3r")
 [connection signal="mouse_entered" from="Puerta/PuertaArea2D" to="." method="change_cursor_hand"]
 [connection signal="mouse_exited" from="Puerta/PuertaArea2D" to="." method="change_cursor_back"]
 [connection signal="input_event" from="JuegoGatos/homeArea2D" to="." method="_on_home_area_2d_input_event"]
+[connection signal="input_event" from="Cama/camaArea2D" to="." method="_on_cama_area_2d_input_event"]
 [connection signal="animation_finished" from="gatocama" to="." method="_on_gatocama_animation_finished"]
-[connection signal="input_event" from="camaArea2D" to="." method="_on_cama_area_2d_input_event"]
+[connection signal="input_event" from="zapato/zapatoArea2D" to="." method="_on_zapato_area_2d_input_event"]
 [connection signal="animation_finished" from="gatozapato" to="." method="_on_gatozapato_animation_finished"]
-[connection signal="input_event" from="zapatoArea2D" to="." method="_on_zapato_area_2d_input_event"]
