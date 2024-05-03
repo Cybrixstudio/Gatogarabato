@@ -1,7 +1,5 @@
 extends Node2D
 
-var hand_cursor = preload("res://assets/Menu/puntero.png")
-
 @onready var miaw = $miaw
 
 # Called when the node enters the scene tree for the first time.
@@ -11,13 +9,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-func change_cursor_hand():
-	Input.set_custom_mouse_cursor(hand_cursor)
 	
-func change_cursor_back():
-	Input.set_custom_mouse_cursor(null)
-
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		get_tree().change_scene_to_file("res://LvL1.tscn")
