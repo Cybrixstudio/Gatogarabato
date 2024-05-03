@@ -1,2 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
+export/gatosversión2.exe
+export/gatosversión2.pck
+export/gatosversión2.rar
+export_presets.cfg
+export_presets.cfg
