@@ -31,26 +31,21 @@ func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 		
 func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$letscatchgatocajon.visible = true
-		$gatocajon.visible = false
+		$gatocajon.play()
 		$imggatocajon.visible = true
-		$Cajon/cajonArea2D.visible = false
+		$Cajon.visible = false
 		miaw.play()
 
 func _on_mantel_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$lestcatchgatomantel.visible = true
-		$gatomantel.visible = false
+		$gatomantel.play()
 		$imggatomesa.visible = true
-		$Mantel/mantelArea2D.visible = false
 		miaw.play()
 
 func _on_jarron_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$lestcatchgatojarron.visible = true
-		$gatojarron.visible = false
+		$gatojarron.play()
 		$imggatojarron.visible = true
-		$Jarron/jarronArea2D.visible = false
 		miaw.play()
 		
 func _on_gatoventana_animation_finished():
@@ -60,3 +55,15 @@ func _on_gatoventana_animation_finished():
 func _on_gatoalacena_animation_finished():
 		$gatoalacena.visible = false
 		$gatoalacenaidol.visible = true
+		
+func _on_gatocajon_animation_finished():
+		$gatocajon.visible = false
+		$letscatchgatocajon.visible = true
+		
+func _on_gatomantel_animation_finished():
+		$gatomantel.visible = false
+		$lestcatchgatomantel.visible = true
+		
+func _on_gatojarron_animation_finished():
+		$gatojarron.visible = false
+		$gatojarronidol.visible = true
