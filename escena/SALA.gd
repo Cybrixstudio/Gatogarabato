@@ -27,26 +27,20 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 
 func _on_equipo_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$lestcatchgatoequipo.visible = true
 		$imggatoequipo.visible = true
-		$gatoequipo.visible = false
-		$Equipo/equipoArea2D.visible = false
+		$gatoequipo.play()
 		miaw.play()
 
 func _on_matera_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$lestcatchgatomatera.visible = true
 		$imggatomatera.visible = true
-		$gatomatera.visible = false
-		$matera/materaArea2D.visible = false
+		$gatomatera.play()
 		miaw.play()
 
 func _on_libros_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		$letscatchgatolibros.visible = true
 		$imggatolibros.visible = true
-		$gatolibros.visible = false
-		$Libros/librosArea2D.visible = false
+		$gatolibros.play()
 		miaw.play()
 		
 func _on_gatocojin_animation_finished():
@@ -56,3 +50,15 @@ func _on_gatocojin_animation_finished():
 func _on_gatopiano_animation_finished():
 		$gatopiano.visible = false
 		$lestcatchgatopiano.visible = true
+		
+func _on_gatomatera_animation_finished():
+		$gatomatera.visible = false
+		$lestcatchgatomatera.visible = true
+		
+func _on_gatoequipo_animation_finished():
+		$gatoequipo.visible = false
+		$lestcatchgatoequipo.visible = true
+		
+func _on_gatolibros_animation_finished():
+		$gatolibros.visible = false
+		$letscatchgatolibros.visible = true

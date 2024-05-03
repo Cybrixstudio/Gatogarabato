@@ -919,7 +919,7 @@
 [ext_resource type="Texture2D" uid="uid://b4eow2ntad4s5" path="res://animaciones/GatosAnimation/GATO1/Loop/GATO1/GATO1_LOOP00061.png" id="703_qebgj"]
 [ext_resource type="Texture2D" uid="uid://y0isbgwh8g2b" path="res://animaciones/GatosAnimation/GATO1/Loop/GATO1/GATO1_LOOP00062.png" id="704_76goe"]
 [ext_resource type="Texture2D" uid="uid://cuxaf3ger33gh" path="res://animaciones/GatosAnimation/GATO1/Loop/GATO1/GATO1_LOOP00063.png" id="705_udvxr"]
-[ext_resource type="Texture2D" uid="uid://c3fsiyw3sbbjs" path="res://animaciones/Gato1/GATO_0014_1/GATO1_0003.png" id="706_32abq"]
+[ext_resource type="Texture2D" uid="uid://c3fsiyw3sbbjs" path="res://assets/animaciones/Gato1/GATO_0014_1/GATO1_0003.png" id="706_32abq"]
 [ext_resource type="Texture2D" uid="uid://tbmqiyk7qqru" path="res://animaciones/GatosAnimation/GATO1/Loop/GATO1/GATO1_LOOP00064.png" id="706_tudrn"]
 [ext_resource type="Texture2D" uid="uid://ddbkr77ppjb82" path="res://animaciones/GatosAnimation/GATO1/Loop/GATO1/GATO1_LOOP00065.png" id="707_d5ldg"]
 [ext_resource type="Texture2D" uid="uid://drps5cv0c7oow" path="res://animaciones/GatosAnimation/GATO1/Loop/GATO1/GATO1_LOOP00066.png" id="708_romq2"]
