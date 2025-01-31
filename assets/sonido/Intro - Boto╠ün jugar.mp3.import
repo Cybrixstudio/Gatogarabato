@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1uxoep1smhb5"
+path="res://.godot/imported/Intro - Boto╠ün jugar.mp3-f0338a8778fbfd508a74ac790174c598.mp3str"
+
+[deps]
+
+source_file="res://assets/sonido/Intro - Boto╠ün jugar.mp3"
+dest_files=["res://.godot/imported/Intro - Boto╠ün jugar.mp3-f0338a8778fbfd508a74ac790174c598.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

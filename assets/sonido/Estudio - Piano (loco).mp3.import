@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgxon8o74ik2i"
+path="res://.godot/imported/Estudio - Piano (loco).mp3-1b91920727c98228978ef1815e64319f.mp3str"
+
+[deps]
+
+source_file="res://assets/sonido/Estudio - Piano (loco).mp3"
+dest_files=["res://.godot/imported/Estudio - Piano (loco).mp3-1b91920727c98228978ef1815e64319f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

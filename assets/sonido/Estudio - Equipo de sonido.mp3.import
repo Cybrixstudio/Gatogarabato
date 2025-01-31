@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1eo3bn43nsuu"
+path="res://.godot/imported/Estudio - Equipo de sonido.mp3-70c41d27aa203f6b6e768ed339e9e517.mp3str"
+
+[deps]
+
+source_file="res://assets/sonido/Estudio - Equipo de sonido.mp3"
+dest_files=["res://.godot/imported/Estudio - Equipo de sonido.mp3-70c41d27aa203f6b6e768ed339e9e517.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cipfcplq0a6jv"
+path="res://.godot/imported/Cuarto - Puerta.mp3-21375ebefb22f9cb82e8216f9375d852.mp3str"
+
+[deps]
+
+source_file="res://assets/sonido/Cuarto - Puerta.mp3"
+dest_files=["res://.godot/imported/Cuarto - Puerta.mp3-21375ebefb22f9cb82e8216f9375d852.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

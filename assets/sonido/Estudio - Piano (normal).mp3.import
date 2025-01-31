@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnek7sf77kiqv"
+path="res://.godot/imported/Estudio - Piano (normal).mp3-d567675c396c151e7219a96eb707e92b.mp3str"
+
+[deps]
+
+source_file="res://assets/sonido/Estudio - Piano (normal).mp3"
+dest_files=["res://.godot/imported/Estudio - Piano (normal).mp3-d567675c396c151e7219a96eb707e92b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

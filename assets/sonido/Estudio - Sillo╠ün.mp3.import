@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://sr1rtxrnsoof"
+path="res://.godot/imported/Estudio - Sillo╠ün.mp3-7488505554fcd0a976379b1201ab54a1.mp3str"
+
+[deps]
+
+source_file="res://assets/sonido/Estudio - Sillo╠ün.mp3"
+dest_files=["res://.godot/imported/Estudio - Sillo╠ün.mp3-7488505554fcd0a976379b1201ab54a1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
