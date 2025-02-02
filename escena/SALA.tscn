@@ -1,4 +1,4 @@
-[gd_scene load_steps=1138 format=3 uid="uid://cut6dpoe1g2xy"]
+[gd_scene load_steps=1148 format=3 uid="uid://cut6dpoe1g2xy"]
 
 [ext_resource type="Texture2D" uid="uid://8e7icvpxalrq" path="res://assets/SALON/SALÓN_BACK.jpg" id="1_boed7"]
 [ext_resource type="Script" path="res://escena/SALA.gd" id="1_lulu1"]
@@ -195,7 +195,6 @@
 [ext_resource type="Texture2D" uid="uid://dtnetqsegnh06" path="res://assets/SALON/SALÓN_0001s_0001s_0000_COJIN.png" id="189_lni3g"]
 [ext_resource type="Texture2D" uid="uid://c780enudvsrvj" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00099.png" id="190_3xrc5"]
 [ext_resource type="Texture2D" uid="uid://dl54nsl5fja7l" path="res://assets/SALON/SALÓN_0001s_0003s_0002_PLANTA-2.png" id="190_h85fr"]
-[ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="191_i8tib"]
 [ext_resource type="Texture2D" uid="uid://mnay43os655d" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00100.png" id="191_xjvru"]
 [ext_resource type="Texture2D" uid="uid://6ysak3vabcw2" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00101.png" id="192_00pqp"]
 [ext_resource type="Texture2D" uid="uid://r65fcvw7vbk0" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00102.png" id="193_x1njy"]
@@ -1127,7 +1126,18 @@
 [ext_resource type="Texture2D" uid="uid://bunhifb8ssivd" path="res://animaciones/GatosAnimation/GATO7/loop/GATO7/GATO7_LOOP00143.png" id="918_joh5p"]
 [ext_resource type="Texture2D" uid="uid://b2ury7qe8lmvl" path="res://animaciones/GatosAnimation/GATO7/loop/GATO7/GATO7_LOOP00144.png" id="919_lia84"]
 [ext_resource type="Texture2D" uid="uid://dvyb35nci4qmr" path="res://animaciones/GatosAnimation/GATO7/loop/GATO7/GATO7_LOOP00145.png" id="920_6oo8f"]
+[ext_resource type="AudioStream" uid="uid://b8avul8d8kb5v" path="res://assets/sonido/Gatos-006.mp3" id="1126_1gvwf"]
 [ext_resource type="AudioStream" uid="uid://c8a4y8p26x73x" path="res://assets/sonido/Estudio - Piano (suave).mp3" id="1127_0dg3c"]
+[ext_resource type="AudioStream" uid="uid://dh6m4n5hpvkvx" path="res://assets/sonido/Mu╠üsica.mp3" id="1129_8auxk"]
+[ext_resource type="AudioStream" uid="uid://bynm6uh0c8yaq" path="res://assets/sonido/Gatos-007.mp3" id="1130_t5760"]
+[ext_resource type="AudioStream" uid="uid://dta8dapxfroxx" path="res://assets/sonido/Gatos-008.mp3" id="1131_4nng2"]
+[ext_resource type="AudioStream" uid="uid://3mhw6100sf1u" path="res://assets/sonido/Gatos-009.mp3" id="1132_562qc"]
+[ext_resource type="AudioStream" uid="uid://bpck30o62mttr" path="res://assets/sonido/Gatos-002.mp3" id="1133_44cdl"]
+[ext_resource type="AudioStream" uid="uid://dmac3uuc1idqe" path="res://assets/sonido/Entra estudio.mp3" id="1134_5o6ry"]
+[ext_resource type="AudioStream" uid="uid://c1eo3bn43nsuu" path="res://assets/sonido/Estudio - Equipo de sonido.mp3" id="1135_b8yu7"]
+[ext_resource type="AudioStream" uid="uid://de3sfdr1xq78v" path="res://assets/sonido/Estudio - Libros.mp3" id="1136_f24pe"]
+[ext_resource type="AudioStream" uid="uid://dhsntoynhfg1w" path="res://assets/sonido/Estudio - Matera.mp3" id="1137_p02ru"]
+[ext_resource type="AudioStream" uid="uid://sr1rtxrnsoof" path="res://assets/sonido/Estudio - Sillo╠ün.mp3" id="1138_rol72"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s1dne"]
 radius = 81.9269
@@ -4727,7 +4737,7 @@ position = Vector2(24.125, 15.4844)
 shape = SubResource("RectangleShape2D_8lxru")
 
 [node name="miaw" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("191_i8tib")
+stream = ExtResource("1126_1gvwf")
 
 [node name="piano" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1127_0dg3c")
@@ -4763,7 +4773,39 @@ position = Vector2(1063.5, 169.5)
 scale = Vector2(0.338, 0.338)
 texture = ExtResource("917_xlv6s")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1129_8auxk")
+volume_db = -14.992
+autoplay = true
+
+[node name="miaw7" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1130_t5760")
+
+[node name="miaw8" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1131_4nng2")
+
+[node name="miaw9" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1132_562qc")
+
+[node name="miaw2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1133_44cdl")
+
+[node name="entraestudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1134_5o6ry")
+autoplay = true
+
+[node name="equipo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1135_b8yu7")
+
+[node name="slibros" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1136_f24pe")
+volume_db = 6.172
+
+[node name="smatera" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1137_p02ru")
+
+[node name="ssillon" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1138_rol72")
 
 [connection signal="input_event" from="Cojin/CojinArea2D" to="." method="_on_cojin_area_2d_input_event"]
 [connection signal="mouse_entered" from="Cojin/CojinArea2D" to="." method="change_cursor_hand"]
