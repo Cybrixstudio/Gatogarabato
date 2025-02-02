@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cnqhvh6fulgs5"]
+[gd_scene load_steps=37 format=3 uid="uid://cnqhvh6fulgs5"]
 
 [ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
 [ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
@@ -27,6 +27,10 @@
 [ext_resource type="AudioStream" uid="uid://dmlnlf7qiijva" path="res://assets/sonido/Gatos-003.mp3" id="25_5xmh7"]
 [ext_resource type="AudioStream" uid="uid://cyoisfa8mw6xe" path="res://assets/sonido/Gatos-004.mp3" id="26_qv6na"]
 [ext_resource type="AudioStream" uid="uid://cvh80ui5j00s8" path="res://assets/sonido/Gatos-005.mp3" id="27_ctd45"]
+[ext_resource type="AudioStream" uid="uid://cmjjgkr088sq8" path="res://assets/sonido/Cuarto - Bau╠ül.mp3" id="28_v663q"]
+[ext_resource type="AudioStream" uid="uid://cipfcplq0a6jv" path="res://assets/sonido/Cuarto - Puerta.mp3" id="29_uetpy"]
+[ext_resource type="AudioStream" uid="uid://btu8o4rjco5tp" path="res://assets/sonido/Cuarto - Ventana.mp3" id="30_g7veq"]
+[ext_resource type="AudioStream" uid="uid://dh6m4n5hpvkvx" path="res://assets/sonido/Mu╠üsica.mp3" id="31_aes4u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
 size = Vector2(141.304, 430.366)
@@ -296,6 +300,20 @@ stream = ExtResource("26_qv6na")
 
 [node name="miaw5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("27_ctd45")
+
+[node name="sonidobaul" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("28_v663q")
+
+[node name="sonidopuerta" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("29_uetpy")
+
+[node name="sonidoventana" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("30_g7veq")
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_aes4u")
+volume_db = -14.992
+autoplay = true
 
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]

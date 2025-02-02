@@ -6,10 +6,15 @@ extends Node2D
 @onready var miaw3 = $miaw3
 @onready var miaw4 = $miaw4
 @onready var miaw5 = $miaw5
+@onready var sonidobaul = $sonidobaul
+@onready var sonidopuerta = $sonidopuerta
+@onready var sonidoventana = $sonidoventana
+@onready var musica = $musica
 
 func _ready():
 	pass
 	entracuarto.play()
+	musica.play()
 	
 func _process(delta):
 	pass
@@ -19,6 +24,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		$GATO3.play()
 		$imggato3.visible = true
 		miaw.play()
+		sonidoventana.play()
 		
 func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -27,12 +33,14 @@ func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 		$GATO1.play()
 		$imggato1.visible = true
 		miaw2.play()
+		sonidobaul.play()
 		
 func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$GATO2.play()
 		$imggato2.visible = true
 		miaw3.play()
+		sonidopuerta.play()
 		
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
