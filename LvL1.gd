@@ -1,7 +1,10 @@
 extends Node2D
 
+@onready var sonido = $sonidoambiente
+
 func _ready():
 	pass
+	sonido.play()
 	
 func _process(delta):
 	pass

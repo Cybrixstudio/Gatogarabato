@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxr84tvcd05sl"]
+[gd_scene load_steps=7 format=3 uid="uid://dxr84tvcd05sl"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_qlqws"]
 [ext_resource type="Texture2D" uid="uid://bvq6yaevkfyl3" path="res://assets/Menu/jugar.png" id="1_sjmou"]
 [ext_resource type="Texture2D" uid="uid://c122wi65sh2jj" path="res://assets/Menu/BG.jpg" id="2_52a6d"]
 [ext_resource type="SpriteFrames" uid="uid://cjtdy73mbkt1y" path="res://escena/GATO1.tres" id="3_y1t6c"]
+[ext_resource type="AudioStream" uid="uid://d1uxoep1smhb5" path="res://assets/sonido/Intro - Boto╠ün jugar.mp3" id="5_nhglk"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_6vddf"]
 diffuse_texture = ExtResource("2_52a6d")
@@ -67,6 +68,10 @@ autoplay = "gato3"
 [node name="jugar" type="TextureButton" parent="VBoxBotones"]
 layout_mode = 2
 texture_normal = ExtResource("1_sjmou")
+
+[node name="clicjugar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nhglk")
+autoplay = true
 
 [connection signal="animation_looped" from="VBoxBotones/gato2" to="." method="_on_gato_2_animation_looped"]
 [connection signal="animation_looped" from="VBoxBotones/gato1" to="." method="_on_gato_1_animation_looped"]

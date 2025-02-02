@@ -1,5 +1,7 @@
 extends Control
 
+@onready var clicjugar = $clicjugar
+
 func _ready():
 	pass
 	
@@ -9,7 +11,7 @@ func _process(delta):
 
 func _on_jugar_pressed():
 	get_tree().change_scene_to_file("res://LvL1.tscn")
-
+	clicjugar.play()
 
 func _on_gato_1_animation_looped():
 	pass # Replace with function body.

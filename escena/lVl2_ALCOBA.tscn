@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cnqhvh6fulgs5"]
+[gd_scene load_steps=29 format=3 uid="uid://cnqhvh6fulgs5"]
 
 [ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
 [ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://cqwqkgn4pj7tg" path="res://assets/ALCOBA/CAMA.png" id="9_dtab0"]
 [ext_resource type="Texture2D" uid="uid://c22iukruu2r70" path="res://assets/ALCOBA/ALCOBA_0001s_0005s_0001_PUERTA.png" id="10_ggn1a"]
 [ext_resource type="Texture2D" uid="uid://pnrky8beat6f" path="res://assets/ALCOBA/ALCOBA_0000s_0003_Capa-1.png" id="11_0mm2m"]
+[ext_resource type="AudioStream" uid="uid://bdlrujpwgkuyx" path="res://assets/sonido/Gatos-001.mp3" id="11_2ofkb"]
 [ext_resource type="Texture2D" uid="uid://dmq4pc7kiw82f" path="res://assets/ALCOBA/catchgato1.png" id="12_e8m5s"]
 [ext_resource type="Texture2D" uid="uid://dfuksnaorepby" path="res://assets/Menu/JUEGO GATOS.png" id="13_oh6e7"]
-[ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="14_sa8nr"]
 [ext_resource type="Texture2D" uid="uid://c37i2sqnc8irh" path="res://gatosPNG/GATO_0003_12.png" id="15_4b1wf"]
 [ext_resource type="Texture2D" uid="uid://ig32rq1rcedg" path="res://gatosPNG/GATO_0012_3.png" id="15_df1tm"]
 [ext_resource type="Texture2D" uid="uid://dlvtegdnr0x2r" path="res://animaciones/GatosAnimation/GATO14/loop/GATO14/GATO14_LOOP00035.png" id="15_mkhse"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://lwmgx3658yon" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0002_COJIN-1.png" id="20_braya"]
 [ext_resource type="Texture2D" uid="uid://dlayavrgj0kad" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0001_COJIN-2.png" id="21_yuu3f"]
 [ext_resource type="Texture2D" uid="uid://t2rru1bkuufr" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0000_COJIN-3.png" id="22_f0v1r"]
+[ext_resource type="AudioStream" uid="uid://crlpqr2p80xvo" path="res://assets/sonido/Entra cuarto.mp3" id="23_xet6d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
 size = Vector2(141.304, 430.366)
@@ -151,7 +152,7 @@ position = Vector2(24.125, 15.4844)
 shape = SubResource("RectangleShape2D_3fn35")
 
 [node name="miaw" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("14_sa8nr")
+stream = ExtResource("11_2ofkb")
 
 [node name="Catchgato1" type="Sprite2D" parent="."]
 position = Vector2(1093, 65)
@@ -245,7 +246,6 @@ position = Vector2(-244, -552)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zapato/zapatoArea2D"]
 position = Vector2(246.78, 549.851)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3qm3r")
 
 [node name="gatozapato" type="AnimatedSprite2D" parent="."]
@@ -276,6 +276,10 @@ texture = ExtResource("21_yuu3f")
 position = Vector2(662, 357)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("22_f0v1r")
+
+[node name="Entracuarto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_xet6d")
+autoplay = true
 
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]

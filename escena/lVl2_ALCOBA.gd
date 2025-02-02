@@ -1,9 +1,11 @@
 extends Node2D
 
 @onready var miaw = $miaw
+@onready var entracuarto = $Entracuarto
 
 func _ready():
 	pass
+	entracuarto.play()
 	
 func _process(delta):
 	pass

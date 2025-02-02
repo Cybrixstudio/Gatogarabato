@@ -198,7 +198,6 @@
 [ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="191_i8tib"]
 [ext_resource type="Texture2D" uid="uid://mnay43os655d" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00100.png" id="191_xjvru"]
 [ext_resource type="Texture2D" uid="uid://6ysak3vabcw2" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00101.png" id="192_00pqp"]
-[ext_resource type="AudioStream" uid="uid://cr0kso0o13u05" path="res://assets/sonido/piano.mp3" id="192_o2kk4"]
 [ext_resource type="Texture2D" uid="uid://r65fcvw7vbk0" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00102.png" id="193_x1njy"]
 [ext_resource type="Texture2D" uid="uid://by3ch2mmlanda" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00103.png" id="194_up1a2"]
 [ext_resource type="Texture2D" uid="uid://c7hp8k5el7v46" path="res://animaciones/GatosAnimation/GATO9/loop/GATO9/GATO9_LOOP00104.png" id="195_lj5qy"]
@@ -1128,6 +1127,7 @@
 [ext_resource type="Texture2D" uid="uid://bunhifb8ssivd" path="res://animaciones/GatosAnimation/GATO7/loop/GATO7/GATO7_LOOP00143.png" id="918_joh5p"]
 [ext_resource type="Texture2D" uid="uid://b2ury7qe8lmvl" path="res://animaciones/GatosAnimation/GATO7/loop/GATO7/GATO7_LOOP00144.png" id="919_lia84"]
 [ext_resource type="Texture2D" uid="uid://dvyb35nci4qmr" path="res://animaciones/GatosAnimation/GATO7/loop/GATO7/GATO7_LOOP00145.png" id="920_6oo8f"]
+[ext_resource type="AudioStream" uid="uid://c8a4y8p26x73x" path="res://assets/sonido/Estudio - Piano (suave).mp3" id="1127_0dg3c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s1dne"]
 radius = 81.9269
@@ -4730,7 +4730,7 @@ shape = SubResource("RectangleShape2D_8lxru")
 stream = ExtResource("191_i8tib")
 
 [node name="piano" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("192_o2kk4")
+stream = ExtResource("1127_0dg3c")
 pitch_scale = 1.49
 
 [node name="imggatocojin" type="Sprite2D" parent="."]
@@ -4762,6 +4762,8 @@ visible = false
 position = Vector2(1063.5, 169.5)
 scale = Vector2(0.338, 0.338)
 texture = ExtResource("917_xlv6s")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="input_event" from="Cojin/CojinArea2D" to="." method="_on_cojin_area_2d_input_event"]
 [connection signal="mouse_entered" from="Cojin/CojinArea2D" to="." method="change_cursor_hand"]
