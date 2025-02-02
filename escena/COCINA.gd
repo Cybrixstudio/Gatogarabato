@@ -11,6 +11,13 @@ extends Node2D
 @onready var sjarron = $sjarron
 @onready var smantel = $smantel
 @onready var sventana = $sventana
+@onready var img_gatojarron = $imggatojarron
+@onready var img_gatoventana = $imggatoventana
+@onready var img_gatoalacena = $imggatoalacena
+@onready var img_gatocajon = $imggatocajon
+@onready var img_gatomesa = $imggatomesa
+@onready var imagen_oculta = $JuegoGatos
+@onready var ganaste = $ganaste
 
 func _ready():
 	pass 
@@ -30,6 +37,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		miaw.play()
 		$gatoventana.play()
 		sventana.play()
+		check_all_images_visible()
 		
 func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -39,6 +47,7 @@ func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 		miaw2.play()
 		$gatoalacena.play()
 		salacena.play()
+		check_all_images_visible()
 		
 func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -47,13 +56,15 @@ func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 		$Cajon.visible = false
 		miaw3.play()
 		spollo.play()
-
+		check_all_images_visible()
+		
 func _on_mantel_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatomantel.play()
 		$imggatomesa.visible = true
 		miaw8.play()
 		smantel.play()
+		check_all_images_visible()
 
 func _on_jarron_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -61,6 +72,16 @@ func _on_jarron_area_2d_input_event(viewport, event, shape_idx):
 		$imggatojarron.visible = true
 		miaw9.play()
 		sjarron.play()
+		check_all_images_visible()
+		
+func check_all_images_visible():
+	if img_gatojarron.visible and \
+		img_gatoventana.visible and \
+		img_gatoalacena.visible and \
+		img_gatocajon.visible and \
+		img_gatomesa.visible :
+		imagen_oculta.visible = true
+		ganaste.play()
 		
 func _on_gatoventana_animation_finished():
 		$gatoventanaidol.visible = true

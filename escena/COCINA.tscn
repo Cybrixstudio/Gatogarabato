@@ -1,4 +1,4 @@
-[gd_scene load_steps=1252 format=3 uid="uid://dvcbpadnhjr7y"]
+[gd_scene load_steps=1253 format=3 uid="uid://dvcbpadnhjr7y"]
 
 [ext_resource type="Texture2D" uid="uid://ysspner7a0t4" path="res://assets/COCINA/COCINA_bg.jpg" id="1_3jt6p"]
 [ext_resource type="Script" path="res://escena/COCINA.gd" id="1_h1xoc"]
@@ -1240,6 +1240,7 @@
 [ext_resource type="AudioStream" uid="uid://b5y38vlaoilo3" path="res://assets/sonido/Cocina - Jarro╠ün.mp3" id="1238_gmxhm"]
 [ext_resource type="AudioStream" uid="uid://cmucbkn7dbto8" path="res://assets/sonido/Cocina - Mantel.mp3" id="1239_8jtxv"]
 [ext_resource type="AudioStream" uid="uid://ewnonjsqt45c" path="res://assets/sonido/Cocina - Ventana.mp3" id="1240_a7t62"]
+[ext_resource type="AudioStream" uid="uid://c6rwrrqcmmkcf" path="res://assets/sonido/Ganaste!.mp3" id="1241_crocb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ntfdr"]
 animations = [{
@@ -5148,6 +5149,7 @@ scale = Vector2(3.4, 3.4)
 texture = ExtResource("194_jdmgx")
 
 [node name="JuegoGatos" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(1092.66, 597.25)
 scale = Vector2(0.0158541, 0.0175314)
 texture = ExtResource("195_syt60")
@@ -5226,6 +5228,9 @@ stream = ExtResource("1239_8jtxv")
 
 [node name="sventana" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1240_a7t62")
+
+[node name="ganaste" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1241_crocb")
 
 [connection signal="animation_finished" from="gatoventana" to="." method="_on_gatoventana_animation_finished"]
 [connection signal="input_event" from="ventana/Area2D" to="." method="_on_area_2d_input_event"]
