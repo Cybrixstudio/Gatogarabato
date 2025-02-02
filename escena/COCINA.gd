@@ -1,4 +1,5 @@
 extends Node2D
+@onready var level_selector = get_node("/root/LevelSelector")
 
 @onready var entra = $entra 
 @onready var miaw = $miaw
@@ -102,3 +103,4 @@ func _on_gatomantel_animation_finished():
 func _on_gatojarron_animation_finished():
 		$gatojarron.visible = false
 		$gatojarronidol.visible = true
+		

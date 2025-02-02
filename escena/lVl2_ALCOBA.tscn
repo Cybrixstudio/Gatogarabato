@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cnqhvh6fulgs5"]
+[gd_scene load_steps=38 format=3 uid="uid://cnqhvh6fulgs5"]
 
 [ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
 [ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
@@ -31,6 +31,7 @@
 [ext_resource type="AudioStream" uid="uid://cipfcplq0a6jv" path="res://assets/sonido/Cuarto - Puerta.mp3" id="29_uetpy"]
 [ext_resource type="AudioStream" uid="uid://btu8o4rjco5tp" path="res://assets/sonido/Cuarto - Ventana.mp3" id="30_g7veq"]
 [ext_resource type="AudioStream" uid="uid://dh6m4n5hpvkvx" path="res://assets/sonido/Mu╠üsica.mp3" id="31_aes4u"]
+[ext_resource type="AudioStream" uid="uid://c6rwrrqcmmkcf" path="res://assets/sonido/Ganaste!.mp3" id="32_7cjgt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
 size = Vector2(141.304, 430.366)
@@ -149,6 +150,7 @@ scale = Vector2(0.495763, 0.6)
 texture = ExtResource("11_0mm2m")
 
 [node name="JuegoGatos" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(1092.66, 600)
 scale = Vector2(0.016, 0.018)
 texture = ExtResource("13_oh6e7")
@@ -314,6 +316,9 @@ stream = ExtResource("30_g7veq")
 stream = ExtResource("31_aes4u")
 volume_db = -14.992
 autoplay = true
+
+[node name="ganaste" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("32_7cjgt")
 
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]

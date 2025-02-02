@@ -1,4 +1,4 @@
-[gd_scene load_steps=1148 format=3 uid="uid://cut6dpoe1g2xy"]
+[gd_scene load_steps=1149 format=3 uid="uid://cut6dpoe1g2xy"]
 
 [ext_resource type="Texture2D" uid="uid://8e7icvpxalrq" path="res://assets/SALON/SALÓN_BACK.jpg" id="1_boed7"]
 [ext_resource type="Script" path="res://escena/SALA.gd" id="1_lulu1"]
@@ -1138,6 +1138,7 @@
 [ext_resource type="AudioStream" uid="uid://de3sfdr1xq78v" path="res://assets/sonido/Estudio - Libros.mp3" id="1136_f24pe"]
 [ext_resource type="AudioStream" uid="uid://dhsntoynhfg1w" path="res://assets/sonido/Estudio - Matera.mp3" id="1137_p02ru"]
 [ext_resource type="AudioStream" uid="uid://sr1rtxrnsoof" path="res://assets/sonido/Estudio - Sillo╠ün.mp3" id="1138_rol72"]
+[ext_resource type="AudioStream" uid="uid://c6rwrrqcmmkcf" path="res://assets/sonido/Ganaste!.mp3" id="1139_6bem2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s1dne"]
 radius = 81.9269
@@ -4726,6 +4727,7 @@ animation = &"gato8 equipo idol"
 autoplay = "gato8 equipo idol"
 
 [node name="JuegoGatos" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(1092.66, 597.25)
 scale = Vector2(0.0158541, 0.0175314)
 texture = ExtResource("187_sfgva")
@@ -4806,6 +4808,9 @@ stream = ExtResource("1137_p02ru")
 
 [node name="ssillon" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1138_rol72")
+
+[node name="ganaste" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1139_6bem2")
 
 [connection signal="input_event" from="Cojin/CojinArea2D" to="." method="_on_cojin_area_2d_input_event"]
 [connection signal="mouse_entered" from="Cojin/CojinArea2D" to="." method="change_cursor_hand"]

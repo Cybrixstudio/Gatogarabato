@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://rmal261gtlw0"]
 
-[ext_resource type="Script" path="res://LvL1.gd" id="1_3tcvi"]
+[ext_resource type="Script" path="res://LevelSelector.gd" id="1_3tcvi"]
 [ext_resource type="Texture2D" uid="uid://dfuksnaorepby" path="res://assets/Menu/JUEGO GATOS.png" id="1_5iavv"]
 [ext_resource type="AudioStream" uid="uid://cuxuin3jx7uj0" path="res://assets/sonido/Casa.mp3" id="3_wbhlj"]
 

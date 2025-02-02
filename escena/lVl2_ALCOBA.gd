@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var level_selector = get_node("/root/LevelSelector")
 @onready var miaw = $miaw
 @onready var entracuarto = $Entracuarto
 @onready var miaw2 = $miaw2
@@ -10,6 +11,13 @@ extends Node2D
 @onready var sonidopuerta = $sonidopuerta
 @onready var sonidoventana = $sonidoventana
 @onready var musica = $musica
+@onready var img_gatojarron = $imggato3
+@onready var img_gatoventana = $imggato2
+@onready var img_gatoalacena = $imggato1
+@onready var img_gatocajon = $imggato4
+@onready var img_gatomesa = $imggato5
+@onready var imagen_oculta = $JuegoGatos
+@onready var ganaste = $ganaste
 
 func _ready():
 	pass
@@ -25,6 +33,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		$imggato3.visible = true
 		miaw.play()
 		sonidoventana.play()
+		check_all_images_visible()
 		
 func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -34,6 +43,7 @@ func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 		$imggato1.visible = true
 		miaw2.play()
 		sonidobaul.play()
+		check_all_images_visible()
 		
 func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -41,6 +51,7 @@ func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 		$imggato2.visible = true
 		miaw3.play()
 		sonidopuerta.play()
+		check_all_images_visible()
 		
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -63,6 +74,7 @@ func _on_cama_area_2d_input_event(viewport, event, shape_idx):
 		$gatocama.play()
 		miaw4.play()
 		$imggato4.visible = true
+		check_all_images_visible()
 		
 func _on_gatocama_animation_finished():
 		$gatocama.visible = false
@@ -73,7 +85,18 @@ func _on_zapato_area_2d_input_event(viewport, event, shape_idx):
 		$gatozapato.play()
 		miaw5.play()
 		$imggato5.visible = true
+		check_all_images_visible()
 		
 func _on_gatozapato_animation_finished():
 		$gatozapato.visible = false
 		$gatozapatoidol.visible = true
+		
+func check_all_images_visible():
+	if img_gatojarron.visible and \
+		img_gatoventana.visible and \
+		img_gatoalacena.visible and \
+		img_gatocajon.visible and \
+		img_gatomesa.visible :
+		imagen_oculta.visible = true
+		ganaste.play()
+		

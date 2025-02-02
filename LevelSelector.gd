@@ -4,7 +4,6 @@ extends Node2D
 
 func _ready():
 	pass
-	sonido.play()
 	
 func _process(delta):
 	pass
