@@ -1,4 +1,4 @@
-[gd_scene load_steps=1247 format=3 uid="uid://dvcbpadnhjr7y"]
+[gd_scene load_steps=1252 format=3 uid="uid://dvcbpadnhjr7y"]
 
 [ext_resource type="Texture2D" uid="uid://ysspner7a0t4" path="res://assets/COCINA/COCINA_bg.jpg" id="1_3jt6p"]
 [ext_resource type="Script" path="res://escena/COCINA.gd" id="1_h1xoc"]
@@ -1235,6 +1235,11 @@
 [ext_resource type="AudioStream" uid="uid://dmlnlf7qiijva" path="res://assets/sonido/Gatos-003.mp3" id="1233_y04ld"]
 [ext_resource type="AudioStream" uid="uid://dta8dapxfroxx" path="res://assets/sonido/Gatos-008.mp3" id="1234_m0dbr"]
 [ext_resource type="AudioStream" uid="uid://3mhw6100sf1u" path="res://assets/sonido/Gatos-009.mp3" id="1235_xtm6w"]
+[ext_resource type="AudioStream" uid="uid://fm307g8dff6o" path="res://assets/sonido/Cocina - Cajo╠ün alto.mp3" id="1236_o6i7u"]
+[ext_resource type="AudioStream" uid="uid://snatel58h2nf" path="res://assets/sonido/Cocina - Cajo╠ün del pollo.mp3" id="1237_f26af"]
+[ext_resource type="AudioStream" uid="uid://b5y38vlaoilo3" path="res://assets/sonido/Cocina - Jarro╠ün.mp3" id="1238_gmxhm"]
+[ext_resource type="AudioStream" uid="uid://cmucbkn7dbto8" path="res://assets/sonido/Cocina - Mantel.mp3" id="1239_8jtxv"]
+[ext_resource type="AudioStream" uid="uid://ewnonjsqt45c" path="res://assets/sonido/Cocina - Ventana.mp3" id="1240_a7t62"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ntfdr"]
 animations = [{
@@ -5206,6 +5211,21 @@ stream = ExtResource("1234_m0dbr")
 
 [node name="miaw9" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1235_xtm6w")
+
+[node name="salacena" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1236_o6i7u")
+
+[node name="spollo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1237_f26af")
+
+[node name="sjarron" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1238_gmxhm")
+
+[node name="smantel" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1239_8jtxv")
+
+[node name="sventana" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1240_a7t62")
 
 [connection signal="animation_finished" from="gatoventana" to="." method="_on_gatoventana_animation_finished"]
 [connection signal="input_event" from="ventana/Area2D" to="." method="_on_area_2d_input_event"]

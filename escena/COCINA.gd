@@ -6,6 +6,11 @@ extends Node2D
 @onready var miaw3 = $miaw3
 @onready var miaw8 = $miaw8
 @onready var miaw9 = $miaw9
+@onready var salacena = $salacena
+@onready var spollo = $spollo
+@onready var sjarron = $sjarron
+@onready var smantel = $smantel
+@onready var sventana = $sventana
 
 func _ready():
 	pass 
@@ -24,6 +29,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		$imggatoventana.visible = true
 		miaw.play()
 		$gatoventana.play()
+		sventana.play()
 		
 func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -32,6 +38,7 @@ func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 		$imggatoalacena.visible = true
 		miaw2.play()
 		$gatoalacena.play()
+		salacena.play()
 		
 func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -39,18 +46,21 @@ func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 		$imggatocajon.visible = true
 		$Cajon.visible = false
 		miaw3.play()
+		spollo.play()
 
 func _on_mantel_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatomantel.play()
 		$imggatomesa.visible = true
 		miaw8.play()
+		smantel.play()
 
 func _on_jarron_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatojarron.play()
 		$imggatojarron.visible = true
 		miaw9.play()
+		sjarron.play()
 		
 func _on_gatoventana_animation_finished():
 		$gatoventanaidol.visible = true
