@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cnqhvh6fulgs5"]
+[gd_scene load_steps=33 format=3 uid="uid://cnqhvh6fulgs5"]
 
 [ext_resource type="Script" path="res://escena/lVl2_ALCOBA.gd" id="1_1nbii"]
 [ext_resource type="Texture2D" uid="uid://cn0xb1cit0dw0" path="res://assets/ALCOBA/alcoba_bg.jpg" id="1_8u04r"]
@@ -23,6 +23,10 @@
 [ext_resource type="Texture2D" uid="uid://dlayavrgj0kad" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0001_COJIN-2.png" id="21_yuu3f"]
 [ext_resource type="Texture2D" uid="uid://t2rru1bkuufr" path="res://assets/ALCOBA/ALCOBA_0001s_0000s_0000_COJIN-3.png" id="22_f0v1r"]
 [ext_resource type="AudioStream" uid="uid://crlpqr2p80xvo" path="res://assets/sonido/Entra cuarto.mp3" id="23_xet6d"]
+[ext_resource type="AudioStream" uid="uid://bpck30o62mttr" path="res://assets/sonido/Gatos-002.mp3" id="24_3q7g8"]
+[ext_resource type="AudioStream" uid="uid://dmlnlf7qiijva" path="res://assets/sonido/Gatos-003.mp3" id="25_5xmh7"]
+[ext_resource type="AudioStream" uid="uid://cyoisfa8mw6xe" path="res://assets/sonido/Gatos-004.mp3" id="26_qv6na"]
+[ext_resource type="AudioStream" uid="uid://cvh80ui5j00s8" path="res://assets/sonido/Gatos-005.mp3" id="27_ctd45"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smj7c"]
 size = Vector2(141.304, 430.366)
@@ -280,6 +284,18 @@ texture = ExtResource("22_f0v1r")
 [node name="Entracuarto" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("23_xet6d")
 autoplay = true
+
+[node name="miaw2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_3q7g8")
+
+[node name="miaw3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_5xmh7")
+
+[node name="miaw4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_qv6na")
+
+[node name="miaw5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_ctd45")
 
 [connection signal="input_event" from="cortina/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="cortina/Area2D" to="." method="change_cursor_hand"]

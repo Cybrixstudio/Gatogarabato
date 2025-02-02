@@ -2,6 +2,10 @@ extends Node2D
 
 @onready var miaw = $miaw
 @onready var entracuarto = $Entracuarto
+@onready var miaw2 = $miaw2
+@onready var miaw3 = $miaw3
+@onready var miaw4 = $miaw4
+@onready var miaw5 = $miaw5
 
 func _ready():
 	pass
@@ -22,13 +26,13 @@ func _on_tcbaul_area_2d_input_event(viewport, event, shape_idx):
 		$tapaabiertabaul.visible = true
 		$GATO1.play()
 		$imggato1.visible = true
-		miaw.play()
+		miaw2.play()
 		
 func _on_puerta_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$GATO2.play()
 		$imggato2.visible = true
-		miaw.play()
+		miaw3.play()
 		
 func _on_home_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -49,7 +53,7 @@ func _on_gato_2_animation_finished():
 func _on_cama_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatocama.play()
-		miaw.play()
+		miaw4.play()
 		$imggato4.visible = true
 		
 func _on_gatocama_animation_finished():
@@ -59,7 +63,7 @@ func _on_gatocama_animation_finished():
 func _on_zapato_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatozapato.play()
-		miaw.play()
+		miaw5.play()
 		$imggato5.visible = true
 		
 func _on_gatozapato_animation_finished():
