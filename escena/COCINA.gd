@@ -1,10 +1,14 @@
 extends Node2D
 
+@onready var entra = $entra 
 @onready var miaw = $miaw
+@onready var miaw2 = $miaw2
+@onready var miaw3 = $miaw3
+@onready var miaw8 = $miaw8
+@onready var miaw9 = $miaw9
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -26,7 +30,7 @@ func _on_alacena_area_2d_input_event(viewport, event, shape_idx):
 		$Alacenaopen.visible = true
 		$Alacenaclose.visible = false
 		$imggatoalacena.visible = true
-		miaw.play()
+		miaw2.play()
 		$gatoalacena.play()
 		
 func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
@@ -34,19 +38,19 @@ func _on_cajon_area_2d_input_event(viewport, event, shape_idx):
 		$gatocajon.play()
 		$imggatocajon.visible = true
 		$Cajon.visible = false
-		miaw.play()
+		miaw3.play()
 
 func _on_mantel_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatomantel.play()
 		$imggatomesa.visible = true
-		miaw.play()
+		miaw8.play()
 
 func _on_jarron_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		$gatojarron.play()
 		$imggatojarron.visible = true
-		miaw.play()
+		miaw9.play()
 		
 func _on_gatoventana_animation_finished():
 		$gatoventanaidol.visible = true

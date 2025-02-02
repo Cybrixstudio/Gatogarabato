@@ -1,4 +1,4 @@
-[gd_scene load_steps=1241 format=3 uid="uid://dvcbpadnhjr7y"]
+[gd_scene load_steps=1247 format=3 uid="uid://dvcbpadnhjr7y"]
 
 [ext_resource type="Texture2D" uid="uid://ysspner7a0t4" path="res://assets/COCINA/COCINA_bg.jpg" id="1_3jt6p"]
 [ext_resource type="Script" path="res://escena/COCINA.gd" id="1_h1xoc"]
@@ -193,7 +193,6 @@
 [ext_resource type="Texture2D" uid="uid://b2onocb1i3uo7" path="res://animaciones/GatosAnimation/GATO5/loop/GATO5/GATO5_LOOP00071.png" id="196_c1q4w"]
 [ext_resource type="Texture2D" uid="uid://hxt6c5q6uu2j" path="res://animaciones/GatosAnimation/GATO5/GATO5/GATO5_00132.png" id="196_eucqd"]
 [ext_resource type="Texture2D" uid="uid://dc58jhbpacd8f" path="res://animaciones/GatosAnimation/GATO5/GATO5/GATO5_00133.png" id="197_ri71g"]
-[ext_resource type="AudioStream" uid="uid://c6jac42c6bdl0" path="res://assets/sonido/catmeow1-89814.mp3" id="197_tu6go"]
 [ext_resource type="Texture2D" uid="uid://c3v8gqbkx7lq4" path="res://animaciones/GatosAnimation/GATO5/loop/GATO5/GATO5_LOOP00072.png" id="197_xwy6j"]
 [ext_resource type="Texture2D" uid="uid://chlsic662oh2x" path="res://animaciones/GatosAnimation/GATO5/GATO5/GATO5_00134.png" id="198_3tdki"]
 [ext_resource type="Texture2D" uid="uid://c62syu3d0noed" path="res://animaciones/GatosAnimation/GATO5/loop/GATO5/GATO5_LOOP00073.png" id="198_bt2t7"]
@@ -1229,6 +1228,13 @@
 [ext_resource type="Texture2D" uid="uid://dfnqciktwjw0v" path="res://animaciones/GatosAnimation/GATO3/loop/GATO3/GATO3_LOOP00143.png" id="1221_a82xx"]
 [ext_resource type="Texture2D" uid="uid://b33y5s7fgbdu5" path="res://animaciones/GatosAnimation/GATO3/loop/GATO3/GATO3_LOOP00144.png" id="1222_4ixj0"]
 [ext_resource type="Texture2D" uid="uid://ddvl006uqbu2h" path="res://animaciones/GatosAnimation/GATO3/loop/GATO3/GATO3_LOOP00145.png" id="1223_x573a"]
+[ext_resource type="AudioStream" uid="uid://cq51m1i7an4iw" path="res://assets/sonido/Entra cocina.mp3" id="1230_isggu"]
+[ext_resource type="AudioStream" uid="uid://bdlrujpwgkuyx" path="res://assets/sonido/Gatos-001.mp3" id="1231_8to8p"]
+[ext_resource type="AudioStream" uid="uid://dh6m4n5hpvkvx" path="res://assets/sonido/Mu╠üsica.mp3" id="1231_8xe0t"]
+[ext_resource type="AudioStream" uid="uid://bpck30o62mttr" path="res://assets/sonido/Gatos-002.mp3" id="1232_1nerd"]
+[ext_resource type="AudioStream" uid="uid://dmlnlf7qiijva" path="res://assets/sonido/Gatos-003.mp3" id="1233_y04ld"]
+[ext_resource type="AudioStream" uid="uid://dta8dapxfroxx" path="res://assets/sonido/Gatos-008.mp3" id="1234_m0dbr"]
+[ext_resource type="AudioStream" uid="uid://3mhw6100sf1u" path="res://assets/sonido/Gatos-009.mp3" id="1235_xtm6w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ntfdr"]
 animations = [{
@@ -5147,12 +5153,6 @@ texture = ExtResource("195_syt60")
 position = Vector2(24.125, 15.4844)
 shape = SubResource("RectangleShape2D_fjltw")
 
-[node name="miaw" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(783.25, 195.5)
-scale = Vector2(0.531111, 0.595618)
-stream = ExtResource("197_tu6go")
-pitch_scale = 1.2
-
 [node name="imggatoventana" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(1087, 509)
@@ -5182,6 +5182,30 @@ visible = false
 position = Vector2(1125.63, 281.375)
 scale = Vector2(0.2935, 0.2935)
 texture = ExtResource("1113_eq54m")
+
+[node name="entra" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1230_isggu")
+autoplay = true
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1231_8xe0t")
+volume_db = -14.992
+autoplay = true
+
+[node name="miaw" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1231_8to8p")
+
+[node name="miaw2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1232_1nerd")
+
+[node name="miaw3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1233_y04ld")
+
+[node name="miaw8" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1234_m0dbr")
+
+[node name="miaw9" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1235_xtm6w")
 
 [connection signal="animation_finished" from="gatoventana" to="." method="_on_gatoventana_animation_finished"]
 [connection signal="input_event" from="ventana/Area2D" to="." method="_on_area_2d_input_event"]
